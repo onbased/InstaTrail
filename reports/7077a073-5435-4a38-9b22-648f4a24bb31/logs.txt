@@ -1,0 +1,1 @@
+2021-10-04 16:37:52.878: INFO: Common.Auth: Arrived user from Firebase null
