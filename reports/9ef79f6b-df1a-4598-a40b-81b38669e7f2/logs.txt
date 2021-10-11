@@ -1,0 +1,117 @@
+2021-10-11 13:14:14.361: INFO: Common.Auth: Arrived user from Firebase minified:rF(displayName: null, email: jani9876@gmail.com, emailVerified: false, isAnonymous: false, metadata: UserMetadata(creationTime: 2021-04-23 17:23:28.000, lastSignInTime: 2021-10-06 10:37:09.000), phoneNumber: null, photoURL: null, providerData, [minified:KM(displayName: null, email: jani9876@gmail.com, phoneNumber: null, photoURL: null, providerId: password, uid: jani9876@gmail.com)], refreshToken: AFxQ4_o7e36aGpwziE8d35yAoT9YVP1v23xcRJQx75GNRb8pa2_l5Mj7QGls65QRjjUbDbRRVtdb39XLwIwtHJ7Ln65H_dcWebmkHcrJ0b4UrZoGpp5XGveRH8t_YvASmscoSMVYoM1W9g5IV_1uQ8-awIi_J1drSHb_-hQBYGwmMQ1aw4697mGxkKn5kEvW2fm19qiANayztGhqYNasr-DLgYqN67yMmw, tenantId: null, uid: 6npJx61xNsYlNr0BVLoS5V6XeJf2)
+2021-10-11 13:14:14.373: FINEST: Root: AuthService has changed
+2021-10-11 13:14:14.373: FINEST: Root: AppGqlClient (anonymous) will be deleted
+2021-10-11 13:14:14.373: FINEST: Root: AppGqlClient (user) will be created via lazyPut
+2021-10-11 13:14:14.373: FINEST: Root: AppGqlClient (trail_admin) will be created via lazyPut
+2021-10-11 13:14:14.373: FINEST: Root: AppGqlClient (org_admin) will be created via lazyPut
+2021-10-11 13:14:14.536: INFO: gql.AppGqlClient: Enqueue 0 mutations from persistence
+2021-10-11 13:14:14.536: INFO: gql.AppGqlClient: Enqueue done
+2021-10-11 13:14:14.544: INFO: gql.links.LogRequestsLink: Request sent: GetCurrentUserProfile
+2021-10-11 13:14:14.621: FINEST: gql.links.MultiMutationLink: (1818508919): Incoming request: GetCurrentUserProfile#1818508919 {id: 6npJx61xNsYlNr0BVLoS5V6XeJf2}
+2021-10-11 13:14:14.637: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2021-10-11 13:14:14.640: FINE: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#1818508919): Requesting from source
+2021-10-11 13:14:14.643: INFO: gql.WebSocketLink.1003076981: Incoming request GetCurrentUserProfile#112288724 (b39c6753-96f7-478d-85af-0a9454365444) {"id":"6npJx61xNsYlNr0BVLoS5V6XeJf2"}
+2021-10-11 13:14:14.645: INFO: gql.WebSocketLink.1003076981: Connecting...
+2021-10-11 13:14:14.646: FINE: gql.WebSocketLink.1003076981: Run channel generator
+2021-10-11 13:14:14.650: FINE: gql.WebSocketLink.1003076981: Listening on GetCurrentUserProfile#112288724 (b39c6753-96f7-478d-85af-0a9454365444) {"id":"6npJx61xNsYlNr0BVLoS5V6XeJf2"}
+2021-10-11 13:14:14.658: FINEST: gql.WebSocketLink.1003076981: Encoded message: {"type":"connection_init","payload":{"headers":{"Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImYwNTM4MmFlMTgxYWJlNjFiOTYwYjA1Yzk3ZmE0MDljNDdhNDQ0ZTciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vaW5zdGF0cmFpbC1jMTQ2YiIsImF1ZCI6Imluc3RhdHJhaWwtYzE0NmIiLCJhdXRoX3RpbWUiOjE2MzIzOTA0NDMsInVzZXJfaWQiOiI2bnBKeDYxeE5zWWxOcjBCVkxvUzVWNlhlSmYyIiwic3ViIjoiNm5wSng2MXhOc1lsTnIwQlZMb1M1VjZYZUpmMiIsImlhdCI6MTYzMzk1MDI5MiwiZXhwIjoxNjMzOTUzODkyLCJlbWFpbCI6Imphbmk5ODc2QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJqYW5pOTg3NkBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.QxMcizB3vjAnvySEf-_KO3DbXKWKHArS8AHtfCeV5vBgqgfjkZzoW5pC_oGzl2Kgo8_-I8zbJWsm58FBRqsEW_ewnHU25RsN0_mbG7YfFjJNJ3hIVvTyJM53DxBjDsAVMC5kGpxghUt7MI8qSgbekLNyRF_d84GWfBKESkDTLx1uCiufRQWnYn0aPI32kG9aEyDbfFJfQpD-DKNb1pzBqhj23VbTgtxukTVlFKof9iCW-g1TIpoBUKANr9gEinHsgdRcz9OCuzol4O-kJ3S_4KWwN9x_QVzoxDmG0lHGsHx0JePHOcd4io6MqN6gb3LYvQBnQvohVUbIJ7K-5zdHWg","X-Hasura-Role":"user"}}}
+2021-10-11 13:14:14.658: INFO: gql.WebSocketLink.1003076981: Initial payload sent, wait for ack
+2021-10-11 13:14:14.692: INFO: gql.AppGqlClient: Enqueue 0 mutations from persistence
+2021-10-11 13:14:14.692: INFO: gql.AppGqlClient: Enqueue done
+2021-10-11 13:14:14.694: INFO: gql.links.LogRequestsLink: Request sent: GetActivityTypes
+2021-10-11 13:14:14.695: FINEST: gql.links.MultiMutationLink: (1129250141): Incoming request: GetActivityTypes#1129250141 {}
+2021-10-11 13:14:14.700: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetActivityTypes
+2021-10-11 13:14:14.701: FINE: gql.links.RetryUntilResponseLink: (GetActivityTypes#1129250141): Requesting from source
+2021-10-11 13:14:14.701: INFO: gql.WebSocketLink.345641790: Incoming request GetActivityTypes#986969777 (fcfb7846-5ae6-4b3f-b42b-9a88247300e4) {}
+2021-10-11 13:14:14.702: INFO: gql.WebSocketLink.345641790: Connecting...
+2021-10-11 13:14:14.702: FINE: gql.WebSocketLink.345641790: Run channel generator
+2021-10-11 13:14:14.702: FINE: gql.WebSocketLink.345641790: Listening on GetActivityTypes#986969777 (fcfb7846-5ae6-4b3f-b42b-9a88247300e4) {}
+2021-10-11 13:14:14.704: FINEST: gql.WebSocketLink.345641790: Encoded message: {"type":"connection_init","payload":{"headers":{"Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImYwNTM4MmFlMTgxYWJlNjFiOTYwYjA1Yzk3ZmE0MDljNDdhNDQ0ZTciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vaW5zdGF0cmFpbC1jMTQ2YiIsImF1ZCI6Imluc3RhdHJhaWwtYzE0NmIiLCJhdXRoX3RpbWUiOjE2MzIzOTA0NDMsInVzZXJfaWQiOiI2bnBKeDYxeE5zWWxOcjBCVkxvUzVWNlhlSmYyIiwic3ViIjoiNm5wSng2MXhOc1lsTnIwQlZMb1M1VjZYZUpmMiIsImlhdCI6MTYzMzk1MDI5MiwiZXhwIjoxNjMzOTUzODkyLCJlbWFpbCI6Imphbmk5ODc2QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJqYW5pOTg3NkBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.QxMcizB3vjAnvySEf-_KO3DbXKWKHArS8AHtfCeV5vBgqgfjkZzoW5pC_oGzl2Kgo8_-I8zbJWsm58FBRqsEW_ewnHU25RsN0_mbG7YfFjJNJ3hIVvTyJM53DxBjDsAVMC5kGpxghUt7MI8qSgbekLNyRF_d84GWfBKESkDTLx1uCiufRQWnYn0aPI32kG9aEyDbfFJfQpD-DKNb1pzBqhj23VbTgtxukTVlFKof9iCW-g1TIpoBUKANr9gEinHsgdRcz9OCuzol4O-kJ3S_4KWwN9x_QVzoxDmG0lHGsHx0JePHOcd4io6MqN6gb3LYvQBnQvohVUbIJ7K-5zdHWg","X-Hasura-Role":"trail_admin"}}}
+2021-10-11 13:14:14.704: INFO: gql.WebSocketLink.345641790: Initial payload sent, wait for ack
+2021-10-11 13:14:14.999: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:14:15.040: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"connection_ack"}
+2021-10-11 13:14:15.041: FINE: gql.WebSocketLink.1003076981: Restarting 0 requests
+2021-10-11 13:14:15.041: INFO: gql.WebSocketLink.1003076981: Got connection ack
+2021-10-11 13:14:15.041: INFO: gql.WebSocketLink.1003076981: Connection initialized
+2021-10-11 13:14:15.042: FINE: gql.WebSocketLink.1003076981: Send StartOperation for b39c6753-96f7-478d-85af-0a9454365444
+2021-10-11 13:14:15.045: FINEST: gql.WebSocketLink.1003076981: Encoded message: {"type":"start","id":"b39c6753-96f7-478d-85af-0a9454365444","payload":{"operationName":"GetCurrentUserProfile","variables":{"id":"6npJx61xNsYlNr0BVLoS5V6XeJf2"},"query":"subscription GetCurrentUserProfile($id: String!) {\n  profile_by_pk(id: $id) {\n    __typename\n    ...ProfileExt\n    organisations_created_by_me {\n      __typename\n      ...Organisation\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  email\n  payment_url\n  created_at\n}"}}
+2021-10-11 13:14:15.045: FINEST: gql.WebSocketLink.1003076981: ... send finished for b39c6753-96f7-478d-85af-0a9454365444
+2021-10-11 13:14:15.047: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:14:15.110: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:14:15.149: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"connection_ack"}
+2021-10-11 13:14:15.149: FINE: gql.WebSocketLink.345641790: Restarting 0 requests
+2021-10-11 13:14:15.149: INFO: gql.WebSocketLink.345641790: Got connection ack
+2021-10-11 13:14:15.149: INFO: gql.WebSocketLink.345641790: Connection initialized
+2021-10-11 13:14:15.150: FINE: gql.WebSocketLink.345641790: Send StartOperation for fcfb7846-5ae6-4b3f-b42b-9a88247300e4
+2021-10-11 13:14:15.151: FINEST: gql.WebSocketLink.345641790: Encoded message: {"type":"start","id":"fcfb7846-5ae6-4b3f-b42b-9a88247300e4","payload":{"operationName":"GetActivityTypes","variables":{},"query":"query GetActivityTypes {\n  __typename\n  activity_type(order_by: {weight: asc}) {\n    __typename\n    ...ActivityType\n  }\n}\n\nfragment ActivityType on activity_type {\n  __typename\n  id\n  name_en\n  name_hu\n  material_icon_name\n  weight\n}"}}
+2021-10-11 13:14:15.151: FINEST: gql.WebSocketLink.345641790: ... send finished for fcfb7846-5ae6-4b3f-b42b-9a88247300e4
+2021-10-11 13:14:15.151: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:14:15.187: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"data","id":"fcfb7846-5ae6-4b3f-b42b-9a88247300e4","payload":{"data":{"__typename":"query_root","activity_type":[{"__typename":"activity_type","id":"f602d0e2-56d7-439f-a2a3-61ff0fb6e8a2","name_en":"Walk","name_hu":"Gyalog","material_icon_name":"walk","weight":10}, {"__typename":"activity_type","id":"ab3b9b84-62d4-41cf-8bc9-4ae458b09cc1","name_en":"Bike","name_hu":"Biciklivel","material_icon_name":"bike","weight":20}, {"__typename":"activity_type","id":"e310caea-216e-4fa8-af02-5855ed31a47d","name_en":"Run","name_hu":"Futva","material_icon_name":"run","weight":30}]}}}
+2021-10-11 13:14:15.190: FINER: gql.links.RetryUntilResponseLink: (GetActivityTypes#1129250141): Got data
+2021-10-11 13:14:15.190: INFO: gql.links.MultiMutationLink: (1129250141): is done
+2021-10-11 13:14:15.191: FINEST: gql.links.MultiMutationLink: (1129250141): Throttling query response...
+2021-10-11 13:14:15.192: FINEST: gql.links.MultiMutationLink: (1129250141): Releasing response for GetActivityTypes#1129250141 {}
+2021-10-11 13:14:15.205: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetActivityTypes
+2021-10-11 13:14:15.215: INFO: gql.links.LogRequestsLink: Request sent: GetRewardTypes
+2021-10-11 13:14:15.216: FINEST: gql.links.MultiMutationLink: (650341633): Incoming request: GetRewardTypes#650341633 {}
+2021-10-11 13:14:15.222: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetRewardTypes
+2021-10-11 13:14:15.223: FINE: gql.links.RetryUntilResponseLink: (GetRewardTypes#650341633): Requesting from source
+2021-10-11 13:14:15.224: INFO: gql.WebSocketLink.345641790: Incoming request GetRewardTypes#535951641 (baf12b0f-9d78-4c20-bfea-5a19a187ef0c) {}
+2021-10-11 13:14:15.224: FINE: gql.WebSocketLink.345641790: Listening on GetRewardTypes#535951641 (baf12b0f-9d78-4c20-bfea-5a19a187ef0c) {}
+2021-10-11 13:14:15.224: FINE: gql.WebSocketLink.345641790: Send StartOperation for baf12b0f-9d78-4c20-bfea-5a19a187ef0c
+2021-10-11 13:14:15.225: FINEST: gql.WebSocketLink.345641790: Encoded message: {"type":"start","id":"baf12b0f-9d78-4c20-bfea-5a19a187ef0c","payload":{"operationName":"GetRewardTypes","variables":{},"query":"query GetRewardTypes {\n  __typename\n  reward_type(order_by: {weight: asc}) {\n    __typename\n    ...RewardType\n  }\n}\n\nfragment RewardType on reward_type {\n  __typename\n  id\n  name_en\n  name_hu\n  material_icon_name\n  weight\n}"}}
+2021-10-11 13:14:15.225: FINEST: gql.WebSocketLink.345641790: ... send finished for baf12b0f-9d78-4c20-bfea-5a19a187ef0c
+2021-10-11 13:14:15.229: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"complete","id":"fcfb7846-5ae6-4b3f-b42b-9a88247300e4"}
+2021-10-11 13:14:15.230: FINE: gql.WebSocketLink.345641790: Done for GetActivityTypes#986969777 (fcfb7846-5ae6-4b3f-b42b-9a88247300e4) {}
+2021-10-11 13:14:15.231: FINE: gql.WebSocketLink.345641790: Cancel for GetActivityTypes#986969777 (fcfb7846-5ae6-4b3f-b42b-9a88247300e4) {}
+2021-10-11 13:14:15.231: FINE: gql.links.RetryUntilResponseLink: (GetActivityTypes#1129250141): Got Done event
+2021-10-11 13:14:15.231: FINEST: gql.WebSocketLink.345641790: Encoded message: {"type":"stop","id":"fcfb7846-5ae6-4b3f-b42b-9a88247300e4"}
+2021-10-11 13:14:15.262: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"data","id":"baf12b0f-9d78-4c20-bfea-5a19a187ef0c","payload":{"data":{"__typename":"query_root","reward_type":[{"__typename":"reward_type","id":"dd2701a9-52da-42a5-b0d2-78c00b872452","name_en":"Fame","name_hu":"Hírnév","material_icon_name":"fileQuestionOutline","weight":10}, {"__typename":"reward_type","id":"c3b152fa-f852-4c43-a47d-c3523c6c45e8","name_en":"Badge","name_hu":"Kitűző","material_icon_name":"badgeAccountAlertOutline","weight":20}, {"__typename":"reward_type","id":"1dce5846-135b-4965-ab7e-ccfbe6523450","name_en":"Medal","name_hu":"Érem","material_icon_name":"medal","weight":30}]}}}
+2021-10-11 13:14:15.263: FINER: gql.links.RetryUntilResponseLink: (GetRewardTypes#650341633): Got data
+2021-10-11 13:14:15.263: INFO: gql.links.MultiMutationLink: (650341633): is done
+2021-10-11 13:14:15.263: FINEST: gql.links.MultiMutationLink: (650341633): Throttling query response...
+2021-10-11 13:14:15.264: FINEST: gql.links.MultiMutationLink: (650341633): Releasing response for GetRewardTypes#650341633 {}
+2021-10-11 13:14:15.275: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetRewardTypes
+2021-10-11 13:14:15.281: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"complete","id":"baf12b0f-9d78-4c20-bfea-5a19a187ef0c"}
+2021-10-11 13:14:15.281: FINE: gql.WebSocketLink.345641790: Done for GetRewardTypes#535951641 (baf12b0f-9d78-4c20-bfea-5a19a187ef0c) {}
+2021-10-11 13:14:15.283: FINE: gql.WebSocketLink.345641790: Cancel for GetRewardTypes#535951641 (baf12b0f-9d78-4c20-bfea-5a19a187ef0c) {}
+2021-10-11 13:14:15.284: FINE: gql.links.RetryUntilResponseLink: (GetRewardTypes#650341633): Got Done event
+2021-10-11 13:14:15.284: FINEST: gql.WebSocketLink.345641790: Encoded message: {"type":"stop","id":"baf12b0f-9d78-4c20-bfea-5a19a187ef0c"}
+2021-10-11 13:14:15.833: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"data","id":"b39c6753-96f7-478d-85af-0a9454365444","payload":{"data":{"profile_by_pk" : {"__typename":"profile","id":"6npJx61xNsYlNr0BVLoS5V6XeJf2","name":"Roden Janos","birth_year":1984,"gender":"male","email":"jani9876@gmail.com","phone":"+36706087783","vat_id":"d","city":"","address":"33","company_name":"e.v.","postal_code":1137,"organisations_created_by_me":[{"__typename":"organisation","id":"037366df-0184-4e01-91d6-807d4c5000fe","name":"JaniOrg","url":null}]}}}}
+2021-10-11 13:14:15.833: FINER: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#1818508919): Got data
+2021-10-11 13:14:15.834: INFO: gql.links.MultiMutationLink: (1818508919): is done
+2021-10-11 13:14:15.834: FINEST: gql.links.MultiMutationLink: (1818508919): Throttling query response...
+2021-10-11 13:14:15.835: FINEST: gql.links.MultiMutationLink: (1818508919): Releasing response for GetCurrentUserProfile#1818508919 {id: 6npJx61xNsYlNr0BVLoS5V6XeJf2}
+2021-10-11 13:14:15.844: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetCurrentUserProfile
+2021-10-11 13:14:20.133: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:14:20.134: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:14:24.998: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:14:25.110: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:14:30.275: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:14:30.275: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:14:35.499: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:14:35.500: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:14:40.033: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:14:40.113: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:14:45.021: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:14:45.117: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:14:50.242: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:14:50.261: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:14:55.008: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:14:55.116: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:15:00.003: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:15:00.117: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:15:05.004: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:15:05.117: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:15:10.213: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:15:10.232: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:15:15.144: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:15:15.162: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:15:20.047: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:15:20.129: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:15:25.042: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:15:25.119: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:15:30.173: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:15:30.192: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
+2021-10-11 13:15:35.011: FINEST: gql.WebSocketLink.1003076981: Message to decode: {"type":"ka"}
+2021-10-11 13:15:35.122: FINEST: gql.WebSocketLink.345641790: Message to decode: {"type":"ka"}
