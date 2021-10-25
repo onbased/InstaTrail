@@ -1,0 +1,158 @@
+2021-10-25 14:58:21.132: INFO: Common.Auth: Arrived user from Firebase User(displayName: null, email: gump891202@gmail.com, emailVerified: true, isAnonymous: false, metadata: UserMetadata(creationTime: 2021-07-12 08:01:08.000, lastSignInTime: 2021-10-25 08:56:01.000), phoneNumber: null, photoURL: null, providerData, [UserInfo(displayName: null, email: gump891202@gmail.com, phoneNumber: null, photoURL: null, providerId: password, uid: gump891202@gmail.com)], refreshToken: AFxQ4_oE-onfT4QUIafQ9qqtrLN6Zf3B2-tsEc1Yq2DEDHSLc6_wl13WcFgzuiKh7of56plS0IBneVhUf_OiveOERIM12m5c0Ow-CZVGNLEBN41kG_UThF36hfuZYIC5LtKgK7IMOMYiHG9z9OMVyMpza_z2fFgEu6P0P6OH0flsbRGrU8HYuoLcz58TqdCM_FHWWfcKIycfXLgHU42CHskWEp3pCqUZFw, tenantId: null, uid: cV4zqBkzc9g1jA5LAoa3py1FhSu1)
+2021-10-25 14:58:21.134: FINEST: Root: AuthService has changed
+2021-10-25 14:58:21.135: FINEST: Root: AppGqlClient (anonymous) will be deleted
+2021-10-25 14:58:21.136: FINEST: Root: AppGqlClient (user) will be created via lazyPut
+2021-10-25 14:58:21.136: FINEST: Root: AppGqlClient (trail_admin) will be created via lazyPut
+2021-10-25 14:58:21.137: FINEST: Root: AppGqlClient (org_admin) will be created via lazyPut
+2021-10-25 14:58:21.323: INFO: gql.AppGqlClient: Enqueue 0 mutations from persistence
+2021-10-25 14:58:21.324: INFO: gql.AppGqlClient: Enqueue done
+2021-10-25 14:58:21.345: INFO: gql.links.LogRequestsLink: Request sent: GetCurrentUserProfile
+2021-10-25 14:58:21.537: FINEST: gql.links.MultiMutationLink: (/1613433279): Incoming request: GetCurrentUserProfile#1613433279 {id: cV4zqBkzc9g1jA5LAoa3py1FhSu1}
+2021-10-25 14:58:21.577: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2021-10-25 14:58:21.584: FINE: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#1613433279): Requesting from source
+2021-10-25 14:58:21.594: INFO: gql.WebSocketLink.789894923: Incoming request GetCurrentUserProfile#1372603343 (30cd1a6b-be15-452c-bc76-1c6ddae28704) {"id":"cV4zqBkzc9g1jA5LAoa3py1FhSu1"}
+2021-10-25 14:58:21.601: INFO: gql.WebSocketLink.789894923: Connecting...
+2021-10-25 14:58:21.602: FINE: gql.WebSocketLink.789894923: Run channel generator
+2021-10-25 14:58:21.611: FINE: gql.WebSocketLink.789894923: Listening on GetCurrentUserProfile#1372603343 (30cd1a6b-be15-452c-bc76-1c6ddae28704) {"id":"cV4zqBkzc9g1jA5LAoa3py1FhSu1"}
+2021-10-25 14:58:21.666: FINEST: gql.WebSocketLink.789894923: Encoded message: {"type":"connection_init","payload":{"headers":{"Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjhmYmRmMjQxZTdjM2E2NTEzNTYwNmRkYzFmZWQyYzU1MjI2MzBhODciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vaW5zdGF0cmFpbC1jMTQ2YiIsImF1ZCI6Imluc3RhdHJhaWwtYzE0NmIiLCJhdXRoX3RpbWUiOjE2MzUxNTIxNjEsInVzZXJfaWQiOiJjVjR6cUJremM5ZzFqQTVMQW9hM3B5MUZoU3UxIiwic3ViIjoiY1Y0enFCa3pjOWcxakE1TEFvYTNweTFGaFN1MSIsImlhdCI6MTYzNTE2NjIwNSwiZXhwIjoxNjM1MTY5ODA1LCJlbWFpbCI6Imd1bXA4OTEyMDJAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZ3VtcDg5MTIwMkBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.V33i3ycqECZwMbMCpMTXYCaYHwFQjca7CmgFpj0rzLdiyd0rl1vMCSGSrWjKpLZXYlWpHl0mySJJC-Mp3z5aH9IlhDTiXBIRlI2TECBVL15H7qfvoscHkfXoxkpGBy3yVVndrWUuOWn0Qd3gvpVZ7rPN47TYTbnKhw_Qk3MFeGBshUo_z6MK_eKxjRagZNskFOeIWN_0MvgcXF94VtQbsx3DJRWWqgY_1sD-qIBxoqMED4tZDObnROeoNAfcLYMYlSFyzRTAhDzUY2y-CSecr2MOr7KlUUycGp5uWkVupdkx3aIuCQ63XiHj4yEzA5c85tWShn4P7moVpRVJ2lBOIQ","X-Hasura-Role":"user"}}}
+2021-10-25 14:58:21.667: INFO: gql.WebSocketLink.789894923: Initial payload sent, wait for ack
+2021-10-25 14:58:22.243: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:58:22.284: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"connection_ack"}
+2021-10-25 14:58:22.286: FINE: gql.WebSocketLink.789894923: Restarting 0 requests
+2021-10-25 14:58:22.287: INFO: gql.WebSocketLink.789894923: Got connection ack
+2021-10-25 14:58:22.290: INFO: gql.WebSocketLink.789894923: Connection initialized
+2021-10-25 14:58:22.292: FINE: gql.WebSocketLink.789894923: Send StartOperation for 30cd1a6b-be15-452c-bc76-1c6ddae28704
+2021-10-25 14:58:22.299: FINEST: gql.WebSocketLink.789894923: Encoded message: {"type":"start","id":"30cd1a6b-be15-452c-bc76-1c6ddae28704","payload":{"operationName":"GetCurrentUserProfile","variables":{"id":"cV4zqBkzc9g1jA5LAoa3py1FhSu1"},"query":"subscription GetCurrentUserProfile($id: String!) {\n  profile_by_pk(id: $id) {\n    __typename\n    ...ProfileExt\n    organisations_created_by_me {\n      __typename\n      ...Organisation\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  email\n  payment_url\n  created_at\n}"}}
+2021-10-25 14:58:22.301: FINEST: gql.WebSocketLink.789894923: ... send finished for 30cd1a6b-be15-452c-bc76-1c6ddae28704
+2021-10-25 14:58:22.304: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:58:22.349: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"data","id":"30cd1a6b-be15-452c-bc76-1c6ddae28704","payload":{"data":{"profile_by_pk" : {"__typename":"profile","id":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","name":"Fodor Gabor","birth_year":1989,"gender":null,"language":"hu_HU","email":"execnoir@gmail.com","phone":"0660555666","vat_id":null,"city":null,"address":null,"company_name":null,"postal_code":null,"organisations_created_by_me":[{"__typename":"organisation","id":"0de5cb0b-bc99-49da-877f-b26f18a25ba5","name":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","url":null}]}}}}
+2021-10-25 14:58:22.356: FINER: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#1613433279): Got data
+2021-10-25 14:58:22.359: INFO: gql.links.MultiMutationLink: (/1613433279): is done
+2021-10-25 14:58:22.361: FINEST: gql.links.MultiMutationLink: (/1613433279): Throttling query response...
+2021-10-25 14:58:22.367: FINEST: gql.links.MultiMutationLink: (/1613433279): Releasing response for GetCurrentUserProfile#1613433279 {id: cV4zqBkzc9g1jA5LAoa3py1FhSu1}
+2021-10-25 14:58:22.397: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetCurrentUserProfile
+2021-10-25 14:58:26.733: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:58:31.737: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:58:32.921: INFO: gql.links.LogRequestsLink: Request sent: UpsertProfile
+2021-10-25 14:58:32.930: FINEST: gql.links.MultiMutationLink: (/670634614): Incoming request: UpsertProfile#670634614 {object: {birth_year: 1989, email: execnoir@gmail.com, language: en_US, name: Fodor Gabor, phone: 0660555666}}
+2021-10-25 14:58:33.324: FINEST: gql.links.MultiMutationLink: (/670634614): Mutation saved to box with id 0
+2021-10-25 14:58:33.327: FINEST: gql.links.MultiMutationLink: (/670634614): Register request on listen: UpsertProfile#670634614 {object: {birth_year: 1989, email: execnoir@gmail.com, language: en_US, name: Fodor Gabor, phone: 0660555666}}. Queue length: 0
+2021-10-25 14:58:33.329: FINEST: gql.links.MultiMutationLink: (/670634614): run a single mutation, no batching
+2021-10-25 14:58:33.332: FINE: gql.links.RetryUntilResponseLink: (UpsertProfile#670634614): Requesting from source
+2021-10-25 14:58:33.335: INFO: gql.WebSocketLink.789894923: Incoming request UpsertProfile#469099088 (0bbe64ff-878f-4d5a-ae79-670120bfce2a) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"en_US","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:33.338: FINE: gql.WebSocketLink.789894923: Listening on UpsertProfile#469099088 (0bbe64ff-878f-4d5a-ae79-670120bfce2a) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"en_US","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:33.341: FINEST: gql.links.MultiMutationLink: Completing 670634614...
+2021-10-25 14:58:33.342: FINE: gql.WebSocketLink.789894923: Send StartOperation for 0bbe64ff-878f-4d5a-ae79-670120bfce2a
+2021-10-25 14:58:33.345: FINEST: gql.WebSocketLink.789894923: Encoded message: {"type":"start","id":"0bbe64ff-878f-4d5a-ae79-670120bfce2a","payload":{"operationName":"UpsertProfile","variables":{"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"en_US","name":"Fodor Gabor","phone":"0660555666"}},"query":"mutation UpsertProfile($object: profile_insert_input!) {\n  __typename\n  insert_profile_one(object: $object, on_conflict: {constraint: profile_pkey, update_columns: [name, phone, birth_year, email, vat_id, city, company_name, postal_code, address, language]}) {\n    __typename\n    ...ProfileExt\n    organisations_created_by_me {\n      __typename\n      ...Organisation\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  email\n  payment_url\n  created_at\n}"}}
+2021-10-25 14:58:33.346: FINEST: gql.WebSocketLink.789894923: ... send finished for 0bbe64ff-878f-4d5a-ae79-670120bfce2a
+2021-10-25 14:58:33.397: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"data","id":"0bbe64ff-878f-4d5a-ae79-670120bfce2a","payload":{"data":{"__typename":"mutation_root","insert_profile_one":{"__typename":"profile","id":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","name":"Fodor Gabor","birth_year":1989,"gender":null,"language":"en_US","email":"execnoir@gmail.com","phone":"0660555666","vat_id":null,"city":null,"address":null,"company_name":null,"postal_code":null,"organisations_created_by_me":[{"__typename":"organisation","id":"0de5cb0b-bc99-49da-877f-b26f18a25ba5","name":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","url":null}]}}}}
+2021-10-25 14:58:33.398: FINER: gql.links.RetryUntilResponseLink: (UpsertProfile#670634614): Got data
+2021-10-25 14:58:33.400: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"complete","id":"0bbe64ff-878f-4d5a-ae79-670120bfce2a"}
+2021-10-25 14:58:33.403: FINE: gql.WebSocketLink.789894923: Done for UpsertProfile#469099088 (0bbe64ff-878f-4d5a-ae79-670120bfce2a) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"en_US","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:33.406: FINE: gql.WebSocketLink.789894923: Cancel for UpsertProfile#469099088 (0bbe64ff-878f-4d5a-ae79-670120bfce2a) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"en_US","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:33.408: FINE: gql.links.RetryUntilResponseLink: (UpsertProfile#670634614): Got Done event
+2021-10-25 14:58:33.409: FINEST: gql.WebSocketLink.789894923: Encoded message: {"type":"stop","id":"0bbe64ff-878f-4d5a-ae79-670120bfce2a"}
+2021-10-25 14:58:33.412: FINEST: gql.links.MultiMutationLink: Value sent for 670634614
+2021-10-25 14:58:33.413: FINEST: gql.links.MultiMutationLink: Response stream controller was closed: false
+2021-10-25 14:58:33.415: FINEST: gql.links.MultiMutationLink: Deleting 670634614 (boxId: 0)
+2021-10-25 14:58:33.449: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2021-10-25 14:58:33.450: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for UpsertProfile
+2021-10-25 14:58:33.478: INFO: gql.links.MultiMutationLink: (/670634614): is done
+2021-10-25 14:58:34.378: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"data","id":"30cd1a6b-be15-452c-bc76-1c6ddae28704","payload":{"data":{"profile_by_pk" : {"__typename":"profile","id":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","name":"Fodor Gabor","birth_year":1989,"gender":null,"language":"en_US","email":"execnoir@gmail.com","phone":"0660555666","vat_id":null,"city":null,"address":null,"company_name":null,"postal_code":null,"organisations_created_by_me":[{"__typename":"organisation","id":"0de5cb0b-bc99-49da-877f-b26f18a25ba5","name":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","url":null}]}}}}
+2021-10-25 14:58:34.380: FINER: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#1613433279): Got data
+2021-10-25 14:58:34.381: FINEST: gql.links.MultiMutationLink: (/1613433279): Throttling query response...
+2021-10-25 14:58:34.383: FINEST: gql.links.MultiMutationLink: (/1613433279): Releasing response for GetCurrentUserProfile#1613433279 {id: cV4zqBkzc9g1jA5LAoa3py1FhSu1}
+2021-10-25 14:58:34.401: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetCurrentUserProfile
+2021-10-25 14:58:36.733: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:58:36.811: INFO: gql.links.LogRequestsLink: Request sent: UpsertProfile
+2021-10-25 14:58:36.815: FINEST: gql.links.MultiMutationLink: (/1267895392): Incoming request: UpsertProfile#1267895392 {object: {birth_year: 1989, email: execnoir@gmail.com, language: hu_HU, name: Fodor Gabor, phone: 0660555666}}
+2021-10-25 14:58:37.146: FINEST: gql.links.MultiMutationLink: (/1267895392): Mutation saved to box with id 1
+2021-10-25 14:58:37.148: FINEST: gql.links.MultiMutationLink: (/1267895392): Register request on listen: UpsertProfile#1267895392 {object: {birth_year: 1989, email: execnoir@gmail.com, language: hu_HU, name: Fodor Gabor, phone: 0660555666}}. Queue length: 0
+2021-10-25 14:58:37.149: FINEST: gql.links.MultiMutationLink: (/1267895392): run a single mutation, no batching
+2021-10-25 14:58:37.152: FINE: gql.links.RetryUntilResponseLink: (UpsertProfile#1267895392): Requesting from source
+2021-10-25 14:58:37.154: INFO: gql.WebSocketLink.789894923: Incoming request UpsertProfile#1102129000 (16785c69-a3e7-4136-8073-5e5d2329ef31) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:37.157: FINE: gql.WebSocketLink.789894923: Listening on UpsertProfile#1102129000 (16785c69-a3e7-4136-8073-5e5d2329ef31) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:37.160: FINEST: gql.links.MultiMutationLink: Completing 1267895392...
+2021-10-25 14:58:37.161: FINE: gql.WebSocketLink.789894923: Send StartOperation for 16785c69-a3e7-4136-8073-5e5d2329ef31
+2021-10-25 14:58:37.164: FINEST: gql.WebSocketLink.789894923: Encoded message: {"type":"start","id":"16785c69-a3e7-4136-8073-5e5d2329ef31","payload":{"operationName":"UpsertProfile","variables":{"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}},"query":"mutation UpsertProfile($object: profile_insert_input!) {\n  __typename\n  insert_profile_one(object: $object, on_conflict: {constraint: profile_pkey, update_columns: [name, phone, birth_year, email, vat_id, city, company_name, postal_code, address, language]}) {\n    __typename\n    ...ProfileExt\n    organisations_created_by_me {\n      __typename\n      ...Organisation\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  email\n  payment_url\n  created_at\n}"}}
+2021-10-25 14:58:37.165: FINEST: gql.WebSocketLink.789894923: ... send finished for 16785c69-a3e7-4136-8073-5e5d2329ef31
+2021-10-25 14:58:37.218: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"data","id":"16785c69-a3e7-4136-8073-5e5d2329ef31","payload":{"data":{"__typename":"mutation_root","insert_profile_one":{"__typename":"profile","id":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","name":"Fodor Gabor","birth_year":1989,"gender":null,"language":"hu_HU","email":"execnoir@gmail.com","phone":"0660555666","vat_id":null,"city":null,"address":null,"company_name":null,"postal_code":null,"organisations_created_by_me":[{"__typename":"organisation","id":"0de5cb0b-bc99-49da-877f-b26f18a25ba5","name":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","url":null}]}}}}
+2021-10-25 14:58:37.221: FINER: gql.links.RetryUntilResponseLink: (UpsertProfile#1267895392): Got data
+2021-10-25 14:58:37.233: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"complete","id":"16785c69-a3e7-4136-8073-5e5d2329ef31"}
+2021-10-25 14:58:37.237: FINE: gql.WebSocketLink.789894923: Done for UpsertProfile#1102129000 (16785c69-a3e7-4136-8073-5e5d2329ef31) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:37.240: FINE: gql.WebSocketLink.789894923: Cancel for UpsertProfile#1102129000 (16785c69-a3e7-4136-8073-5e5d2329ef31) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:37.241: FINE: gql.links.RetryUntilResponseLink: (UpsertProfile#1267895392): Got Done event
+2021-10-25 14:58:37.242: FINEST: gql.WebSocketLink.789894923: Encoded message: {"type":"stop","id":"16785c69-a3e7-4136-8073-5e5d2329ef31"}
+2021-10-25 14:58:37.245: FINEST: gql.links.MultiMutationLink: Value sent for 1267895392
+2021-10-25 14:58:37.245: FINEST: gql.links.MultiMutationLink: Response stream controller was closed: false
+2021-10-25 14:58:37.247: FINEST: gql.links.MultiMutationLink: Deleting 1267895392 (boxId: 1)
+2021-10-25 14:58:37.275: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2021-10-25 14:58:37.277: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for UpsertProfile
+2021-10-25 14:58:37.527: INFO: gql.links.MultiMutationLink: (/1267895392): is done
+2021-10-25 14:58:37.528: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"data","id":"30cd1a6b-be15-452c-bc76-1c6ddae28704","payload":{"data":{"profile_by_pk" : {"__typename":"profile","id":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","name":"Fodor Gabor","birth_year":1989,"gender":null,"language":"hu_HU","email":"execnoir@gmail.com","phone":"0660555666","vat_id":null,"city":null,"address":null,"company_name":null,"postal_code":null,"organisations_created_by_me":[{"__typename":"organisation","id":"0de5cb0b-bc99-49da-877f-b26f18a25ba5","name":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","url":null}]}}}}
+2021-10-25 14:58:37.531: FINER: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#1613433279): Got data
+2021-10-25 14:58:37.533: FINEST: gql.links.MultiMutationLink: (/1613433279): Throttling query response...
+2021-10-25 14:58:37.535: FINEST: gql.links.MultiMutationLink: (/1613433279): Releasing response for GetCurrentUserProfile#1613433279 {id: cV4zqBkzc9g1jA5LAoa3py1FhSu1}
+2021-10-25 14:58:37.553: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetCurrentUserProfile
+2021-10-25 14:58:38.562: INFO: gql.links.LogRequestsLink: Request sent: UpsertProfile
+2021-10-25 14:58:38.566: FINEST: gql.links.MultiMutationLink: (/1267895392): Incoming request: UpsertProfile#1267895392 {object: {birth_year: 1989, email: execnoir@gmail.com, language: hu_HU, name: Fodor Gabor, phone: 0660555666}}
+2021-10-25 14:58:38.884: FINEST: gql.links.MultiMutationLink: (/1267895392): Mutation saved to box with id 2
+2021-10-25 14:58:38.886: FINEST: gql.links.MultiMutationLink: (/1267895392): Register request on listen: UpsertProfile#1267895392 {object: {birth_year: 1989, email: execnoir@gmail.com, language: hu_HU, name: Fodor Gabor, phone: 0660555666}}. Queue length: 0
+2021-10-25 14:58:38.887: FINEST: gql.links.MultiMutationLink: (/1267895392): run a single mutation, no batching
+2021-10-25 14:58:38.890: FINE: gql.links.RetryUntilResponseLink: (UpsertProfile#1267895392): Requesting from source
+2021-10-25 14:58:38.893: INFO: gql.WebSocketLink.789894923: Incoming request UpsertProfile#2007583835 (34d91c5f-4999-4993-a35a-e85997b5c4fe) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:38.896: FINE: gql.WebSocketLink.789894923: Listening on UpsertProfile#2007583835 (34d91c5f-4999-4993-a35a-e85997b5c4fe) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:38.899: FINEST: gql.links.MultiMutationLink: Completing 1267895392...
+2021-10-25 14:58:38.900: FINE: gql.WebSocketLink.789894923: Send StartOperation for 34d91c5f-4999-4993-a35a-e85997b5c4fe
+2021-10-25 14:58:38.902: FINEST: gql.WebSocketLink.789894923: Encoded message: {"type":"start","id":"34d91c5f-4999-4993-a35a-e85997b5c4fe","payload":{"operationName":"UpsertProfile","variables":{"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}},"query":"mutation UpsertProfile($object: profile_insert_input!) {\n  __typename\n  insert_profile_one(object: $object, on_conflict: {constraint: profile_pkey, update_columns: [name, phone, birth_year, email, vat_id, city, company_name, postal_code, address, language]}) {\n    __typename\n    ...ProfileExt\n    organisations_created_by_me {\n      __typename\n      ...Organisation\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  email\n  payment_url\n  created_at\n}"}}
+2021-10-25 14:58:38.903: FINEST: gql.WebSocketLink.789894923: ... send finished for 34d91c5f-4999-4993-a35a-e85997b5c4fe
+2021-10-25 14:58:38.965: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"data","id":"34d91c5f-4999-4993-a35a-e85997b5c4fe","payload":{"data":{"__typename":"mutation_root","insert_profile_one":{"__typename":"profile","id":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","name":"Fodor Gabor","birth_year":1989,"gender":null,"language":"hu_HU","email":"execnoir@gmail.com","phone":"0660555666","vat_id":null,"city":null,"address":null,"company_name":null,"postal_code":null,"organisations_created_by_me":[{"__typename":"organisation","id":"0de5cb0b-bc99-49da-877f-b26f18a25ba5","name":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","url":null}]}}}}
+2021-10-25 14:58:38.968: FINER: gql.links.RetryUntilResponseLink: (UpsertProfile#1267895392): Got data
+2021-10-25 14:58:38.969: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"complete","id":"34d91c5f-4999-4993-a35a-e85997b5c4fe"}
+2021-10-25 14:58:38.973: FINE: gql.WebSocketLink.789894923: Done for UpsertProfile#2007583835 (34d91c5f-4999-4993-a35a-e85997b5c4fe) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:38.977: FINE: gql.WebSocketLink.789894923: Cancel for UpsertProfile#2007583835 (34d91c5f-4999-4993-a35a-e85997b5c4fe) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:38.978: FINE: gql.links.RetryUntilResponseLink: (UpsertProfile#1267895392): Got Done event
+2021-10-25 14:58:38.979: FINEST: gql.WebSocketLink.789894923: Encoded message: {"type":"stop","id":"34d91c5f-4999-4993-a35a-e85997b5c4fe"}
+2021-10-25 14:58:38.982: FINEST: gql.links.MultiMutationLink: Value sent for 1267895392
+2021-10-25 14:58:38.983: FINEST: gql.links.MultiMutationLink: Response stream controller was closed: false
+2021-10-25 14:58:38.985: FINEST: gql.links.MultiMutationLink: Deleting 1267895392 (boxId: 2)
+2021-10-25 14:58:39.013: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2021-10-25 14:58:39.014: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for UpsertProfile
+2021-10-25 14:58:39.039: INFO: gql.links.MultiMutationLink: (/1267895392): is done
+2021-10-25 14:58:41.519: INFO: gql.links.LogRequestsLink: Request sent: UpsertProfile
+2021-10-25 14:58:41.527: FINEST: gql.links.MultiMutationLink: (/1267895392): Incoming request: UpsertProfile#1267895392 {object: {birth_year: 1989, email: execnoir@gmail.com, language: hu_HU, name: Fodor Gabor, phone: 0660555666}}
+2021-10-25 14:58:41.796: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:58:41.828: FINEST: gql.links.MultiMutationLink: (/1267895392): Mutation saved to box with id 3
+2021-10-25 14:58:41.831: FINEST: gql.links.MultiMutationLink: (/1267895392): Register request on listen: UpsertProfile#1267895392 {object: {birth_year: 1989, email: execnoir@gmail.com, language: hu_HU, name: Fodor Gabor, phone: 0660555666}}. Queue length: 0
+2021-10-25 14:58:41.832: FINEST: gql.links.MultiMutationLink: (/1267895392): run a single mutation, no batching
+2021-10-25 14:58:41.834: FINE: gql.links.RetryUntilResponseLink: (UpsertProfile#1267895392): Requesting from source
+2021-10-25 14:58:41.836: INFO: gql.WebSocketLink.789894923: Incoming request UpsertProfile#1740212068 (8d3cf053-254c-47e9-a3dc-2972d190dc72) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:41.839: FINE: gql.WebSocketLink.789894923: Listening on UpsertProfile#1740212068 (8d3cf053-254c-47e9-a3dc-2972d190dc72) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:41.842: FINEST: gql.links.MultiMutationLink: Completing 1267895392...
+2021-10-25 14:58:41.843: FINE: gql.WebSocketLink.789894923: Send StartOperation for 8d3cf053-254c-47e9-a3dc-2972d190dc72
+2021-10-25 14:58:41.846: FINEST: gql.WebSocketLink.789894923: Encoded message: {"type":"start","id":"8d3cf053-254c-47e9-a3dc-2972d190dc72","payload":{"operationName":"UpsertProfile","variables":{"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}},"query":"mutation UpsertProfile($object: profile_insert_input!) {\n  __typename\n  insert_profile_one(object: $object, on_conflict: {constraint: profile_pkey, update_columns: [name, phone, birth_year, email, vat_id, city, company_name, postal_code, address, language]}) {\n    __typename\n    ...ProfileExt\n    organisations_created_by_me {\n      __typename\n      ...Organisation\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  email\n  payment_url\n  created_at\n}"}}
+2021-10-25 14:58:41.847: FINEST: gql.WebSocketLink.789894923: ... send finished for 8d3cf053-254c-47e9-a3dc-2972d190dc72
+2021-10-25 14:58:41.901: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"data","id":"8d3cf053-254c-47e9-a3dc-2972d190dc72","payload":{"data":{"__typename":"mutation_root","insert_profile_one":{"__typename":"profile","id":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","name":"Fodor Gabor","birth_year":1989,"gender":null,"language":"hu_HU","email":"execnoir@gmail.com","phone":"0660555666","vat_id":null,"city":null,"address":null,"company_name":null,"postal_code":null,"organisations_created_by_me":[{"__typename":"organisation","id":"0de5cb0b-bc99-49da-877f-b26f18a25ba5","name":"cV4zqBkzc9g1jA5LAoa3py1FhSu1","url":null}]}}}}
+2021-10-25 14:58:41.904: FINER: gql.links.RetryUntilResponseLink: (UpsertProfile#1267895392): Got data
+2021-10-25 14:58:41.916: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"complete","id":"8d3cf053-254c-47e9-a3dc-2972d190dc72"}
+2021-10-25 14:58:41.920: FINE: gql.WebSocketLink.789894923: Done for UpsertProfile#1740212068 (8d3cf053-254c-47e9-a3dc-2972d190dc72) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:41.923: FINE: gql.WebSocketLink.789894923: Cancel for UpsertProfile#1740212068 (8d3cf053-254c-47e9-a3dc-2972d190dc72) {"object":{"birth_year":1989,"email":"execnoir@gmail.com","language":"hu_HU","name":"Fodor Gabor","phone":"0660555666"}}
+2021-10-25 14:58:41.924: FINE: gql.links.RetryUntilResponseLink: (UpsertProfile#1267895392): Got Done event
+2021-10-25 14:58:41.924: FINEST: gql.WebSocketLink.789894923: Encoded message: {"type":"stop","id":"8d3cf053-254c-47e9-a3dc-2972d190dc72"}
+2021-10-25 14:58:41.927: FINEST: gql.links.MultiMutationLink: Value sent for 1267895392
+2021-10-25 14:58:41.928: FINEST: gql.links.MultiMutationLink: Response stream controller was closed: false
+2021-10-25 14:58:41.930: FINEST: gql.links.MultiMutationLink: Deleting 1267895392 (boxId: 3)
+2021-10-25 14:58:41.959: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2021-10-25 14:58:41.961: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for UpsertProfile
+2021-10-25 14:58:41.985: INFO: gql.links.MultiMutationLink: (/1267895392): is done
+2021-10-25 14:58:46.757: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:58:51.737: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:58:56.750: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:59:01.739: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:59:06.772: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:59:11.741: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:59:16.749: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:59:21.742: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:59:26.744: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:59:31.756: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
+2021-10-25 14:59:36.744: FINEST: gql.WebSocketLink.789894923: Message to decode: {"type":"ka"}
