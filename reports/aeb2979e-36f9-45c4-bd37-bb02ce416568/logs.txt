@@ -1,0 +1,91 @@
+2022-01-30 14:48:54.583216: INFO: Common.Auth: Found User(displayName: null, email: belakovics.akos@gmail.com, emailVerified: true, isAnonymous: false, metadata: UserMetadata(creationTime: 2022-01-18 12:03:56.592, lastSignInTime: 2022-01-27 09:52:01.501), phoneNumber: null, photoURL: null, providerData, [UserInfo(displayName: null, email: belakovics.akos@gmail.com, phoneNumber: null, photoURL: null, providerId: password, uid: belakovics.akos@gmail.com)], refreshToken: , tenantId: null, uid: F3BOp962SUNB6VO1gQO5xqMlIaS2)
+2022-01-30 14:48:54.583294: FINEST: Root: Login status has changed
+2022-01-30 14:48:54.583309: FINEST: Root: AppGqlClient (anonymous) will be deleted
+2022-01-30 14:48:54.583325: FINEST: Root: AppGqlClient (user) will be created via lazyPut
+2022-01-30 14:48:54.583338: FINEST: Root: AppGqlClient (trail_admin) will be created via lazyPut
+2022-01-30 14:48:54.583353: FINEST: Root: AppGqlClient (org_admin) will be created via lazyPut
+2022-01-30 14:48:54.586483: INFO: Common.Auth: Arrived user from Firebase User(displayName: null, email: belakovics.akos@gmail.com, emailVerified: true, isAnonymous: false, metadata: UserMetadata(creationTime: 2022-01-18 12:03:56.592, lastSignInTime: 2022-01-27 09:52:01.501), phoneNumber: null, photoURL: null, providerData, [UserInfo(displayName: null, email: belakovics.akos@gmail.com, phoneNumber: null, photoURL: null, providerId: password, uid: belakovics.akos@gmail.com)], refreshToken: , tenantId: null, uid: F3BOp962SUNB6VO1gQO5xqMlIaS2)
+2022-01-30 14:48:54.587420: INFO: services.LocationService: Initialized
+2022-01-30 14:48:54.595785: INFO: gql.AppGqlClient: Enqueue 0 mutations from persistence
+2022-01-30 14:48:54.595878: INFO: gql.AppGqlClient: Enqueue done
+2022-01-30 14:48:54.596627: INFO: gql.links.LogRequestsLink: Request sent: GetCurrentUserProfile
+2022-01-30 14:48:54.602742: FINEST: gql.links.MultiMutationLink: (/43316663): Incoming request: GetCurrentUserProfile#43316663 {id: F3BOp962SUNB6VO1gQO5xqMlIaS2}
+2022-01-30 14:48:54.603155: FINEST: gql.links.MultiMutationLink: (/43316663): Waiting for first response...
+2022-01-30 14:48:54.603187: FINE: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#43316663): Requesting from source
+2022-01-30 14:48:54.622891: INFO: gql.links.LogRequestsLink: Request sent: AthleteGetTrailsForListing
+2022-01-30 14:48:54.623137: FINEST: gql.links.MultiMutationLink: (/937041849): Incoming request: AthleteGetTrailsForListing#937041849 {}
+2022-01-30 14:48:54.986200: INFO: services.LocationService: App lifecycle state change: state: AppLifecycleState.resumed, subscribers: 1, tracking: false, background: false
+2022-01-30 14:48:55.514118: FINER: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#43316663): Got data
+2022-01-30 14:48:55.515450: FINEST: gql.links.MultiMutationLink: (/43316663): Got first response
+2022-01-30 14:48:55.516362: INFO: gql.links.MultiMutationLink: (/43316663): is done
+2022-01-30 14:48:55.516852: FINEST: gql.links.MultiMutationLink: (/937041849): Waiting for first response...
+2022-01-30 14:48:55.517776: FINE: gql.links.RetryUntilResponseLink: (AthleteGetTrailsForListing#937041849): Requesting from source
+2022-01-30 14:48:57.401838: INFO: services.LocationService: App lifecycle state change: state: AppLifecycleState.inactive, subscribers: 1, tracking: false, background: false
+2022-01-30 14:48:58.718074: INFO: services.LocationService: Location tracking is on
+2022-01-30 14:48:58.719051: INFO: services.LocationService: Tracking started
+2022-01-30 14:48:58.733979: INFO: services.LocationService: Got position
+2022-01-30 14:48:58.734573: INFO: gql.links.LogRequestsLink: Request sent: NearbyTrails
+2022-01-30 14:48:58.734838: FINEST: gql.links.MultiMutationLink: (/1981642777): Incoming request: NearbyTrails#1981642777 {loc: {type: Point, coordinates: [18.39026803880487, 47.44369219170023, 316.7765350341797]}, distance: 60000.0}
+2022-01-30 14:48:58.735213: FINEST: gql.links.MultiMutationLink: (/1981642777): Waiting for first response...
+2022-01-30 14:48:58.735307: FINE: gql.links.RetryUntilResponseLink: (NearbyTrails#1981642777): Requesting from source
+2022-01-30 14:48:59.128221: INFO: services.LocationService: App lifecycle state change: state: AppLifecycleState.resumed, subscribers: 1, tracking: true, background: false
+2022-01-30 14:49:01.539251: FINER: gql.links.RetryUntilResponseLink: (AthleteGetTrailsForListing#937041849): Got data
+2022-01-30 14:49:01.539992: FINEST: gql.links.MultiMutationLink: (/937041849): Got first response
+2022-01-30 14:49:01.540374: INFO: gql.links.MultiMutationLink: (/937041849): is done
+2022-01-30 14:49:02.447803: INFO: services.LocationService: Got position
+2022-01-30 14:49:04.029239: INFO: services.LocationService: Got position
+2022-01-30 14:49:05.030516: INFO: services.LocationService: Got position
+2022-01-30 14:49:06.025530: INFO: services.LocationService: Got position
+2022-01-30 14:49:07.034314: INFO: services.LocationService: Got position
+2022-01-30 14:49:07.220005: INFO: gql.links.LogRequestsLink: Request sent: AthleteGetEntries
+2022-01-30 14:49:07.222349: FINEST: gql.links.MultiMutationLink: (/808158399): Incoming request: AthleteGetEntries#808158399 {userId: F3BOp962SUNB6VO1gQO5xqMlIaS2}
+2022-01-30 14:49:07.224291: FINEST: gql.links.MultiMutationLink: (/808158399): Waiting for first response...
+2022-01-30 14:49:07.224765: FINE: gql.links.RetryUntilResponseLink: (AthleteGetEntries#808158399): Requesting from source
+2022-01-30 14:49:07.377396: FINEST: gql.links.MultiMutationLink: (/1981642777): Cancel request
+2022-01-30 14:49:07.378682: FINEST: gql.links.MultiMutationLink: (/937041849): Cancel request
+2022-01-30 14:49:07.379947: INFO: gql.links.MultiMutationLink: (/1981642777): is done
+2022-01-30 14:49:08.027303: INFO: services.LocationService: Got position
+2022-01-30 14:49:08.387106: INFO: services.LocationService: Location tracking is off
+2022-01-30 14:49:08.387890: INFO: services.LocationService: Location tracking stopped
+2022-01-30 14:49:09.313258: FINER: gql.links.RetryUntilResponseLink: (NearbyTrails#1981642777): Got data
+2022-01-30 14:49:09.317536: FINER: gql.links.RetryUntilResponseLink: (AthleteGetEntries#808158399): Got data
+2022-01-30 14:49:09.317966: FINEST: gql.links.MultiMutationLink: (/808158399): Got first response
+2022-01-30 14:49:09.318340: INFO: gql.links.MultiMutationLink: (/808158399): is done
+2022-01-30 14:49:11.278293: INFO: gql.links.LogRequestsLink: Request sent: AthleteGetTrailsForListing
+2022-01-30 14:49:11.278899: FINEST: gql.links.MultiMutationLink: (/937041849): Incoming request: AthleteGetTrailsForListing#937041849 {}
+2022-01-30 14:49:11.279705: FINEST: gql.links.MultiMutationLink: (/937041849): Waiting for first response...
+2022-01-30 14:49:11.279876: FINE: gql.links.RetryUntilResponseLink: (AthleteGetTrailsForListing#937041849): Requesting from source
+2022-01-30 14:49:11.280124: INFO: gql.links.LogRequestsLink: Request sent: NearbyTrails
+2022-01-30 14:49:11.280297: FINEST: gql.links.MultiMutationLink: (/1794940572): Incoming request: NearbyTrails#1794940572 {loc: {type: Point, coordinates: [18.39036729188486, 47.44380908091314, 316.0288963317871]}, distance: 60000.0}
+2022-01-30 14:49:11.427495: FINEST: gql.links.MultiMutationLink: (/808158399): Cancel request
+2022-01-30 14:49:12.285662: INFO: services.LocationService: Location tracking is on
+2022-01-30 14:49:12.286335: INFO: services.LocationService: Tracking started
+2022-01-30 14:49:12.317130: INFO: services.LocationService: Got position
+2022-01-30 14:49:13.039356: INFO: services.LocationService: Got position
+2022-01-30 14:49:14.045131: INFO: services.LocationService: Got position
+2022-01-30 14:49:15.040822: INFO: services.LocationService: Got position
+2022-01-30 14:49:16.037609: INFO: services.LocationService: Got position
+2022-01-30 14:49:17.038219: INFO: services.LocationService: Got position
+2022-01-30 14:49:17.979597: FINER: gql.links.RetryUntilResponseLink: (AthleteGetTrailsForListing#937041849): Got data
+2022-01-30 14:49:17.980132: FINEST: gql.links.MultiMutationLink: (/937041849): Got first response
+2022-01-30 14:49:17.980364: INFO: gql.links.MultiMutationLink: (/937041849): is done
+2022-01-30 14:49:17.980479: FINEST: gql.links.MultiMutationLink: (/1794940572): Waiting for first response...
+2022-01-30 14:49:17.980630: FINE: gql.links.RetryUntilResponseLink: (NearbyTrails#1794940572): Requesting from source
+2022-01-30 14:49:18.036920: INFO: services.LocationService: Got position
+2022-01-30 14:49:19.033760: INFO: services.LocationService: Got position
+2022-01-30 14:49:20.038175: INFO: services.LocationService: Got position
+2022-01-30 14:49:21.039392: INFO: services.LocationService: Got position
+2022-01-30 14:49:22.039995: INFO: services.LocationService: Got position
+2022-01-30 14:49:23.034845: INFO: services.LocationService: Got position
+2022-01-30 14:49:23.110180: FINER: gql.links.RetryUntilResponseLink: (NearbyTrails#1794940572): Got data
+2022-01-30 14:49:23.110810: FINEST: gql.links.MultiMutationLink: (/1794940572): Got first response
+2022-01-30 14:49:23.111146: INFO: gql.links.MultiMutationLink: (/1794940572): is done
+2022-01-30 14:49:24.038204: INFO: services.LocationService: Got position
+2022-01-30 14:49:25.038849: INFO: services.LocationService: Got position
+2022-01-30 14:49:26.052611: INFO: services.LocationService: Got position
+2022-01-30 14:49:27.037046: INFO: services.LocationService: Got position
+2022-01-30 14:49:28.036981: INFO: services.LocationService: Got position
+2022-01-30 14:49:29.382261: INFO: services.LocationService: Got position
+2022-01-30 14:49:30.037922: INFO: services.LocationService: Got position
+2022-01-30 14:49:31.035125: INFO: services.LocationService: Got position
+2022-01-30 14:49:32.038183: INFO: services.LocationService: Got position
