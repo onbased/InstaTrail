@@ -1,0 +1,107 @@
+2022-02-01 05:06:23.683560: INFO: Common.Auth: Found User(displayName: null, email: albert@papps.net, emailVerified: true, isAnonymous: false, metadata: UserMetadata(creationTime: 2021-09-08 13:13:28.416, lastSignInTime: 2022-01-21 09:24:42.667), phoneNumber: null, photoURL: null, providerData, [UserInfo(displayName: null, email: albert@papps.net, phoneNumber: null, photoURL: null, providerId: password, uid: albert@papps.net)], refreshToken: , tenantId: null, uid: 9ViQ8qkLSNeTSfk6WN5S4SYoFMv1)
+2022-02-01 05:06:23.683869: FINEST: Root: Login status has changed
+2022-02-01 05:06:23.683944: FINEST: Root: AppGqlClient (anonymous) will be deleted
+2022-02-01 05:06:23.684019: FINEST: Root: AppGqlClient (user) will be created via lazyPut
+2022-02-01 05:06:23.684087: FINEST: Root: AppGqlClient (trail_admin) will be created via lazyPut
+2022-02-01 05:06:23.684149: FINEST: Root: AppGqlClient (org_admin) will be created via lazyPut
+2022-02-01 05:06:23.694709: INFO: Common.Auth: Arrived user from Firebase User(displayName: null, email: albert@papps.net, emailVerified: true, isAnonymous: false, metadata: UserMetadata(creationTime: 2021-09-08 13:13:28.416, lastSignInTime: 2022-01-21 09:24:42.667), phoneNumber: null, photoURL: null, providerData, [UserInfo(displayName: null, email: albert@papps.net, phoneNumber: null, photoURL: null, providerId: password, uid: albert@papps.net)], refreshToken: , tenantId: null, uid: 9ViQ8qkLSNeTSfk6WN5S4SYoFMv1)
+2022-02-01 05:06:23.696675: INFO: services.LocationService: Initialized
+2022-02-01 05:06:23.899920: INFO: gql.AppGqlClient: Enqueue 0 mutations from persistence
+2022-02-01 05:06:23.900014: INFO: gql.AppGqlClient: Enqueue done
+2022-02-01 05:06:23.900398: INFO: gql.links.LogRequestsLink: Request sent: GetCurrentUserProfile
+2022-02-01 05:06:23.905490: FINEST: gql.links.MultiMutationLink: (/712683545): Incoming request: GetCurrentUserProfile#712683545 {id: 9ViQ8qkLSNeTSfk6WN5S4SYoFMv1}
+2022-02-01 05:06:23.905988: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2022-02-01 05:06:23.906056: FINEST: gql.links.MultiMutationLink: (/712683545): Waiting for first response...
+2022-02-01 05:06:23.906090: FINE: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#712683545): Requesting from source
+2022-02-01 05:06:23.906488: INFO: gql.links.LogRequestsLink: Request sent: AthleteGetTrailsForListing
+2022-02-01 05:06:23.906648: FINEST: gql.links.MultiMutationLink: (/467547193): Incoming request: AthleteGetTrailsForListing#467547193 {}
+2022-02-01 05:06:24.819951: INFO: services.LocationService: Location tracking is on
+2022-02-01 05:06:24.821076: INFO: services.LocationService: Tracking started
+2022-02-01 05:06:24.848222: INFO: services.LocationService: Got position
+2022-02-01 05:06:24.850482: INFO: gql.links.LogRequestsLink: Request sent: NearbyTrails
+2022-02-01 05:06:24.851015: FINEST: gql.links.MultiMutationLink: (/121286036): Incoming request: NearbyTrails#121286036 {loc: {type: Point, coordinates: [18.39388402420999, 47.56471679430246, 161.81877989787608]}, distance: 60000.0}
+2022-02-01 05:06:24.852127: INFO: services.LocationService: Got position
+2022-02-01 05:06:24.872697: INFO: services.LocationService: Got position
+2022-02-01 05:06:25.086115: INFO: services.LocationService: Got position
+2022-02-01 05:06:25.396180: FINER: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#712683545): Got data
+2022-02-01 05:06:25.396872: FINEST: gql.links.MultiMutationLink: (/712683545): Got first response
+2022-02-01 05:06:25.397384: INFO: gql.links.MultiMutationLink: (/712683545): is done
+2022-02-01 05:06:25.397762: FINEST: gql.links.MultiMutationLink: (/467547193): Waiting for first response...
+2022-02-01 05:06:25.398296: FINE: gql.links.RetryUntilResponseLink: (AthleteGetTrailsForListing#467547193): Requesting from source
+2022-02-01 05:06:25.398936: FINEST: gql.links.MultiMutationLink: (/712683545): Throttling query response...
+2022-02-01 05:06:25.400722: FINEST: gql.links.MultiMutationLink: (/712683545): Releasing response for GetCurrentUserProfile#712683545 {id: 9ViQ8qkLSNeTSfk6WN5S4SYoFMv1}
+2022-02-01 05:06:25.407433: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetCurrentUserProfile
+2022-02-01 05:06:25.678271: FINER: gql.links.RetryUntilResponseLink: (AthleteGetTrailsForListing#467547193): Got data
+2022-02-01 05:06:25.678548: FINEST: gql.links.MultiMutationLink: (/467547193): Got first response
+2022-02-01 05:06:25.678725: INFO: gql.links.MultiMutationLink: (/467547193): is done
+2022-02-01 05:06:25.678810: FINEST: gql.links.MultiMutationLink: (/121286036): Waiting for first response...
+2022-02-01 05:06:25.678944: FINE: gql.links.RetryUntilResponseLink: (NearbyTrails#121286036): Requesting from source
+2022-02-01 05:06:25.679104: FINEST: gql.links.MultiMutationLink: (/467547193): Throttling query response...
+2022-02-01 05:06:25.679591: FINEST: gql.links.MultiMutationLink: (/467547193): Releasing response for AthleteGetTrailsForListing#467547193 {}
+2022-02-01 05:06:25.723602: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for AthleteGetTrailsForListing
+2022-02-01 05:06:25.725249: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2022-02-01 05:06:25.890868: FINER: gql.links.RetryUntilResponseLink: (NearbyTrails#121286036): Got data
+2022-02-01 05:06:25.891109: FINEST: gql.links.MultiMutationLink: (/121286036): Got first response
+2022-02-01 05:06:25.891252: INFO: gql.links.MultiMutationLink: (/121286036): is done
+2022-02-01 05:06:25.891322: FINEST: gql.links.MultiMutationLink: (/121286036): Throttling query response...
+2022-02-01 05:06:25.891529: FINEST: gql.links.MultiMutationLink: (/121286036): Releasing response for NearbyTrails#121286036 {loc: {type: Point, coordinates: [18.39388402420999, 47.56471679430246, 161.81877989787608]}, distance: 60000.0}
+2022-02-01 05:06:25.918477: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for AthleteGetTrailsForListing
+2022-02-01 05:06:25.929341: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2022-02-01 05:06:25.929553: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for NearbyTrails
+2022-02-01 05:06:30.547745: INFO: gql.links.LogRequestsLink: Request sent: AthleteGetEntries
+2022-02-01 05:06:30.549729: FINEST: gql.links.MultiMutationLink: (/888664009): Incoming request: AthleteGetEntries#888664009 {userId: 9ViQ8qkLSNeTSfk6WN5S4SYoFMv1}
+2022-02-01 05:06:30.558737: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for AthleteGetEntries
+2022-02-01 05:06:30.559786: FINEST: gql.links.MultiMutationLink: (/888664009): Waiting for first response...
+2022-02-01 05:06:30.560404: FINE: gql.links.RetryUntilResponseLink: (AthleteGetEntries#888664009): Requesting from source
+2022-02-01 05:06:30.691982: FINEST: gql.links.MultiMutationLink: (/121286036): Cancel request
+2022-02-01 05:06:30.693779: FINEST: gql.links.MultiMutationLink: (/467547193): Cancel request
+2022-02-01 05:06:30.776374: FINER: gql.links.RetryUntilResponseLink: (AthleteGetEntries#888664009): Got data
+2022-02-01 05:06:30.777294: FINEST: gql.links.MultiMutationLink: (/888664009): Got first response
+2022-02-01 05:06:30.778014: INFO: gql.links.MultiMutationLink: (/888664009): is done
+2022-02-01 05:06:30.778493: FINEST: gql.links.MultiMutationLink: (/888664009): Throttling query response...
+2022-02-01 05:06:30.779356: FINEST: gql.links.MultiMutationLink: (/888664009): Releasing response for AthleteGetEntries#888664009 {userId: 9ViQ8qkLSNeTSfk6WN5S4SYoFMv1}
+2022-02-01 05:06:30.784118: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for AthleteGetEntries
+2022-02-01 05:06:30.784901: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2022-02-01 05:06:31.707383: INFO: services.LocationService: Location tracking is off
+2022-02-01 05:06:31.708724: INFO: services.LocationService: Location tracking stopped
+2022-02-01 05:06:41.557592: INFO: gql.links.LogRequestsLink: Request sent: GetCompletedTrails
+2022-02-01 05:06:41.559422: FINEST: gql.links.MultiMutationLink: (/184577820): Incoming request: GetCompletedTrails#184577820 {userId: 9ViQ8qkLSNeTSfk6WN5S4SYoFMv1}
+2022-02-01 05:06:41.590193: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCompletedTrails
+2022-02-01 05:06:41.590898: FINEST: gql.links.MultiMutationLink: (/184577820): Waiting for first response...
+2022-02-01 05:06:41.591213: FINE: gql.links.RetryUntilResponseLink: (GetCompletedTrails#184577820): Requesting from source
+2022-02-01 05:06:41.691200: FINEST: gql.links.MultiMutationLink: (/888664009): Cancel request
+2022-02-01 05:06:41.820313: FINER: gql.links.RetryUntilResponseLink: (GetCompletedTrails#184577820): Got data
+2022-02-01 05:06:41.821724: FINEST: gql.links.MultiMutationLink: (/184577820): Got first response
+2022-02-01 05:06:41.822468: INFO: gql.links.MultiMutationLink: (/184577820): is done
+2022-02-01 05:06:41.823228: FINEST: gql.links.MultiMutationLink: (/184577820): Throttling query response...
+2022-02-01 05:06:41.824806: FINEST: gql.links.MultiMutationLink: (/184577820): Releasing response for GetCompletedTrails#184577820 {userId: 9ViQ8qkLSNeTSfk6WN5S4SYoFMv1}
+2022-02-01 05:06:41.864832: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetCompletedTrails
+2022-02-01 05:06:41.866092: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2022-02-01 05:06:50.617817: INFO: gql.links.LogRequestsLink: Request sent: GetCompletedTrail
+2022-02-01 05:06:50.619080: FINEST: gql.links.MultiMutationLink: (/1308838341): Incoming request: GetCompletedTrail#1308838341 {activityId: 589b9501-cc59-4557-bdcb-2200e46e3515}
+2022-02-01 05:06:50.624460: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCompletedTrail
+2022-02-01 05:06:50.625896: FINEST: gql.links.MultiMutationLink: (/1308838341): Waiting for first response...
+2022-02-01 05:06:50.626805: FINE: gql.links.RetryUntilResponseLink: (GetCompletedTrail#1308838341): Requesting from source
+2022-02-01 05:06:50.647450: INFO: gql.links.LogRequestsLink: Request sent: GetReachedCheckpoints
+2022-02-01 05:06:50.648942: FINEST: gql.links.MultiMutationLink: (/1965803013): Incoming request: GetReachedCheckpoints#1965803013 {activityId: 589b9501-cc59-4557-bdcb-2200e46e3515}
+2022-02-01 05:06:50.652210: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetReachedCheckpoints
+2022-02-01 05:06:50.693586: FINER: gql.links.RetryUntilResponseLink: (GetCompletedTrail#1308838341): Got data
+2022-02-01 05:06:50.694173: FINEST: gql.links.MultiMutationLink: (/1308838341): Got first response
+2022-02-01 05:06:50.694564: INFO: gql.links.MultiMutationLink: (/1308838341): is done
+2022-02-01 05:06:50.694795: FINEST: gql.links.MultiMutationLink: (/1965803013): Waiting for first response...
+2022-02-01 05:06:50.695365: FINE: gql.links.RetryUntilResponseLink: (GetReachedCheckpoints#1965803013): Requesting from source
+2022-02-01 05:06:50.696106: FINEST: gql.links.MultiMutationLink: (/1308838341): Throttling query response...
+2022-02-01 05:06:50.697812: FINEST: gql.links.MultiMutationLink: (/1308838341): Releasing response for GetCompletedTrail#1308838341 {activityId: 589b9501-cc59-4557-bdcb-2200e46e3515}
+2022-02-01 05:06:50.725205: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCompletedTrails
+2022-02-01 05:06:50.725636: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetCompletedTrail
+2022-02-01 05:06:50.725814: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetReachedCheckpoints
+2022-02-01 05:06:50.726411: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2022-02-01 05:06:50.798040: FINER: gql.links.RetryUntilResponseLink: (GetReachedCheckpoints#1965803013): Got data
+2022-02-01 05:06:50.798469: FINEST: gql.links.MultiMutationLink: (/1965803013): Got first response
+2022-02-01 05:06:50.798714: INFO: gql.links.MultiMutationLink: (/1965803013): is done
+2022-02-01 05:06:50.798837: FINEST: gql.links.MultiMutationLink: (/1965803013): Throttling query response...
+2022-02-01 05:06:50.799356: FINEST: gql.links.MultiMutationLink: (/1965803013): Releasing response for GetReachedCheckpoints#1965803013 {activityId: 589b9501-cc59-4557-bdcb-2200e46e3515}
+2022-02-01 05:06:50.822166: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCompletedTrails
+2022-02-01 05:06:50.822689: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCompletedTrail
+2022-02-01 05:06:50.822902: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetReachedCheckpoints
+2022-02-01 05:06:50.823660: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
