@@ -1,9 +1,0 @@
-2021-11-07 16:30:21.531959: INFO: Common.Auth: Arrived user from Firebase null
-2021-11-07 16:30:21.554885: FINEST: Root: AuthService has changed
-2021-11-07 16:30:21.562073: FINEST: Root: AppGqlClient (user) will be deleted
-2021-11-07 16:30:21.565220: FINEST: Root: AppGqlClient (trail_admin) will be deleted
-2021-11-07 16:30:21.568266: FINEST: Root: AppGqlClient (org_admin) will be deleted
-2021-11-07 16:30:21.575989: FINEST: Root: AppGqlClient (anon) will be created via lazyPut
-2021-11-07 16:30:21.620886: INFO: services.LocationService: Initialized
-2021-11-07 16:30:23.745346: INFO: gql.AppGqlClient: Enqueue 0 mutations from persistence
-2021-11-07 16:30:23.750594: INFO: gql.AppGqlClient: Enqueue done
