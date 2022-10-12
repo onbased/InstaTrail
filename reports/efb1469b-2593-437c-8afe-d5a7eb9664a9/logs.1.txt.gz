@@ -1,0 +1,744 @@
+2022-10-12 10:13:06.765: FINEST: Root: AppGqlClient (anonymous) will be created via lazyPut
+2022-10-12 10:13:06.767: FINEST: Root: Login status has changed
+2022-10-12 10:13:06.768: FINEST: Root: AppGqlClient (user) will be deleted
+2022-10-12 10:13:06.769: FINEST: Root: AppGqlClient (trail_admin) will be deleted
+2022-10-12 10:13:06.770: FINEST: Root: AppGqlClient (org_admin) will be deleted
+2022-10-12 10:13:08.187: INFO: Common.Auth: Arrived user from Firebase minified:wA(displayName: null, email: belakovics.akos@gmail.com, emailVerified: true, isAnonymous: false, metadata: UserMetadata(creationTime: 2022-01-18 11:03:56.000, lastSignInTime: 2022-10-12 08:12:45.000), phoneNumber: null, photoURL: null, providerData, [minified:Tf(displayName: null, email: z446gpbznm@privaterelay.appleid.com, phoneNumber: null, photoURL: null, providerId: apple.com, uid: 000125.0304466dc67a4209a002e530bb1393a1.1712), minified:Tf(displayName: null, email: belakovics.akos@gmail.com, phoneNumber: null, photoURL: null, providerId: password, uid: belakovics.akos@gmail.com)], refreshToken: AOEOulbQI2XmbPLaPh6T-bMMm5Y-7Wyla6hIAcbRBaXAIzK3wg7Bzr3xY6ZU0TfI-2BKWeMhgzzK4ebyGPhbg1AXnKPejABIjzh_Z_DK-HqQiCKUEmIwsTUSebmRqRPGHU0el-eWk_DJ8-isXOORjHT6NxkZ4lwiqXFmUSC0KcJDZ6FoV_sKxJsIZVnCCAJWif_V9KI8eViM-C0-YIhUQ-0DtFKfYFQUJxDL4v7EP2ttGk2hxxFo8f4, tenantId: null, uid: F3BOp962SUNB6VO1gQO5xqMlIaS2)
+2022-10-12 10:13:08.190: FINEST: Root: Login status has changed
+2022-10-12 10:13:08.190: FINEST: Root: AppGqlClient (user) will be created via lazyPut
+2022-10-12 10:13:08.191: FINEST: Root: AppGqlClient (trail_admin) will be created via lazyPut
+2022-10-12 10:13:08.191: FINEST: Root: AppGqlClient (org_admin) will be created via lazyPut
+2022-10-12 10:13:08.788: INFO: gql.AppGqlClient: Enqueue 0 mutations from persistence
+2022-10-12 10:13:08.789: INFO: gql.AppGqlClient: Enqueue done
+2022-10-12 10:13:08.798: INFO: gql.links.LogRequestsLink: Request sent: GetCurrentUserProfile
+2022-10-12 10:13:08.901: INFO: gql.AppGqlClient: Enqueue 0 mutations from persistence
+2022-10-12 10:13:08.902: INFO: gql.AppGqlClient: Enqueue done
+2022-10-12 10:13:08.914: INFO: gql.links.LogRequestsLink: Request sent: GetTrailsReview
+2022-10-12 10:13:08.931: FINEST: gql.links.MultiMutationLink: (GetCurrentUserProfile/2063725984): Incoming request: GetCurrentUserProfile#2063725984 {id: F3BOp962SUNB6VO1gQO5xqMlIaS2}
+2022-10-12 10:13:08.945: FINEST: gql.links.MultiMutationLink: (GetCurrentUserProfile/2063725984): Waiting for first response...
+2022-10-12 10:13:08.950: INFO: gql.WebSocketLink.645069874: Incoming request GetCurrentUserProfile#1056029808 (2ace77a3-df09-48b8-90de-6b571cf9216a) {"id":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}
+2022-10-12 10:13:08.952: FINE: gql.WebSocketLink.645069874: Listening on GetCurrentUserProfile#1056029808 (2ace77a3-df09-48b8-90de-6b571cf9216a) {"id":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}
+2022-10-12 10:13:08.953: INFO: gql.WebSocketLink.645069874: connect(154734): Connecting...
+2022-10-12 10:13:08.954: INFO: gql.WebSocketLink.645069874: Change status to connecting
+2022-10-12 10:13:08.955: FINE: gql.WebSocketLink.645069874: connect(154734): Run channel generator
+2022-10-12 10:13:08.964: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"connection_init","payload":{"headers":{"Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk5NjJmMDRmZWVkOTU0NWNlMjEzNGFiNTRjZWVmNTgxYWYyNGJhZmYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vaW5zdGF0cmFpbC1jMTQ2YiIsImF1ZCI6Imluc3RhdHJhaWwtYzE0NmIiLCJhdXRoX3RpbWUiOjE2NjU1NjAyOTQsInVzZXJfaWQiOiJGM0JPcDk2MlNVTkI2Vk8xZ1FPNXhxTWxJYVMyIiwic3ViIjoiRjNCT3A5NjJTVU5CNlZPMWdRTzV4cU1sSWFTMiIsImlhdCI6MTY2NTU2MDI5NCwiZXhwIjoxNjY1NTYzODk0LCJlbWFpbCI6ImJlbGFrb3ZpY3MuYWtvc0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJhcHBsZS5jb20iOlsiMDAwMTI1LjAzMDQ0NjZkYzY3YTQyMDlhMDAyZTUzMGJiMTM5M2ExLjE3MTIiXSwiZW1haWwiOlsiYmVsYWtvdmljcy5ha29zQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.ioLORloJPfbfw_R90eNRoULeXwdqBChcvXp7Jjky1XYPtO0STMzqcLpvUUe6454wbzOtI-IpbsPrFSEmH-kNHhPKvxFijDAkIu4XZZTVfAKTrgiTYPr4bSKV-nBIngCn5njwA3yESSxBv7HhflwKS9puLMNw85dxtjCnB2e0Lj2tRIzBEt3XONTzQ4bad6nMTZ5V14K6T3Qz_behHxRdQwEf6XtRyRXPnrqls58u7H1PZwFqUwoWC6qd7qL_DqgFORAOCxtLMKhwoutnkCRI5nyiNR_XIGY3oG0bQQh1H75WYq_F3-Z562ti2nfH4msJokez8VoVyofYxyk8FsQvxg","X-Hasura-Role":"user"}}}
+2022-10-12 10:13:08.965: INFO: gql.WebSocketLink.645069874: connect(154734): ws(461216681): sub(126288127): Initial payload sent, wait for ack
+2022-10-12 10:13:08.980: FINEST: gql.links.MultiMutationLink: (GetTrailsReview/1551472077): Incoming request: GetTrailsReview#1551472077 {orderBy: asc, userId: F3BOp962SUNB6VO1gQO5xqMlIaS2, onlyNotDeleted: false}
+2022-10-12 10:13:08.999: FINEST: gql.links.MultiMutationLink: (GetTrailsReview/1551472077): Waiting for first response...
+2022-10-12 10:13:09.004: INFO: gql.WebSocketLink.898851966: Incoming request GetTrailsReview#564462916 (ac614d61-c137-478c-b91e-f58b8dce5863) {"orderBy":"asc","userId":"F3BOp962SUNB6VO1gQO5xqMlIaS2","onlyNotDeleted":false}
+2022-10-12 10:13:09.007: FINE: gql.WebSocketLink.898851966: Listening on GetTrailsReview#564462916 (ac614d61-c137-478c-b91e-f58b8dce5863) {"orderBy":"asc","userId":"F3BOp962SUNB6VO1gQO5xqMlIaS2","onlyNotDeleted":false}
+2022-10-12 10:13:09.008: INFO: gql.WebSocketLink.898851966: connect(124625): Connecting...
+2022-10-12 10:13:09.009: INFO: gql.WebSocketLink.898851966: Change status to connecting
+2022-10-12 10:13:09.009: FINE: gql.WebSocketLink.898851966: connect(124625): Run channel generator
+2022-10-12 10:13:09.013: FINEST: gql.WebSocketLink.898851966: Encoded message: {"type":"connection_init","payload":{"headers":{"Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk5NjJmMDRmZWVkOTU0NWNlMjEzNGFiNTRjZWVmNTgxYWYyNGJhZmYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vaW5zdGF0cmFpbC1jMTQ2YiIsImF1ZCI6Imluc3RhdHJhaWwtYzE0NmIiLCJhdXRoX3RpbWUiOjE2NjU1NjAyOTQsInVzZXJfaWQiOiJGM0JPcDk2MlNVTkI2Vk8xZ1FPNXhxTWxJYVMyIiwic3ViIjoiRjNCT3A5NjJTVU5CNlZPMWdRTzV4cU1sSWFTMiIsImlhdCI6MTY2NTU2MDI5NCwiZXhwIjoxNjY1NTYzODk0LCJlbWFpbCI6ImJlbGFrb3ZpY3MuYWtvc0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJhcHBsZS5jb20iOlsiMDAwMTI1LjAzMDQ0NjZkYzY3YTQyMDlhMDAyZTUzMGJiMTM5M2ExLjE3MTIiXSwiZW1haWwiOlsiYmVsYWtvdmljcy5ha29zQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.ioLORloJPfbfw_R90eNRoULeXwdqBChcvXp7Jjky1XYPtO0STMzqcLpvUUe6454wbzOtI-IpbsPrFSEmH-kNHhPKvxFijDAkIu4XZZTVfAKTrgiTYPr4bSKV-nBIngCn5njwA3yESSxBv7HhflwKS9puLMNw85dxtjCnB2e0Lj2tRIzBEt3XONTzQ4bad6nMTZ5V14K6T3Qz_behHxRdQwEf6XtRyRXPnrqls58u7H1PZwFqUwoWC6qd7qL_DqgFORAOCxtLMKhwoutnkCRI5nyiNR_XIGY3oG0bQQh1H75WYq_F3-Z562ti2nfH4msJokez8VoVyofYxyk8FsQvxg","X-Hasura-Role":"trail_admin"}}}
+2022-10-12 10:13:09.014: INFO: gql.WebSocketLink.898851966: connect(124625): ws(521935887): sub(69393449): Initial payload sent, wait for ack
+2022-10-12 10:13:09.489: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:09.531: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"connection_ack"}
+2022-10-12 10:13:09.532: INFO: gql.WebSocketLink.645069874: connect(154734): ws(461216681): sub(126288127): Got connection ack
+2022-10-12 10:13:09.533: FINE: gql.WebSocketLink.645069874: Restarting 0 requests
+2022-10-12 10:13:09.533: INFO: gql.WebSocketLink.645069874: connect(154734): ws(461216681): sub(126288127): Connection initialized
+2022-10-12 10:13:09.534: INFO: gql.WebSocketLink.645069874: Change status to connected
+2022-10-12 10:13:09.534: FINEST: gql.WebSocketLink.645069874: connect(154734): ws(461216681): sub(126288127): Finished successfully
+2022-10-12 10:13:09.535: FINE: gql.WebSocketLink.645069874: Send StartOperation for 2ace77a3-df09-48b8-90de-6b571cf9216a
+2022-10-12 10:13:09.536: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"start","id":"2ace77a3-df09-48b8-90de-6b571cf9216a","payload":{"operationName":"GetCurrentUserProfile","variables":{"id":"F3BOp962SUNB6VO1gQO5xqMlIaS2"},"query":"subscription GetCurrentUserProfile($id: String!) {\n  vw_full_profile(where: {id: {_eq: $id}}) {\n    __typename\n    ...FullProfile\n  }\n}\n\nquery GetProfile($id: String!) {\n  __typename\n  vw_full_profile(where: {id: {_eq: $id}}) {\n    __typename\n    ...FullProfile\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  gender\n  guide_completed\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n}\n\nfragment FullProfile on vw_full_profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n  organisations_created_by_me {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:13:09.536: FINEST: gql.WebSocketLink.645069874: ... send done for 2ace77a3-df09-48b8-90de-6b571cf9216a
+2022-10-12 10:13:09.537: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:09.537: INFO: gql.WebSocketLink.645069874: Change status to idle
+2022-10-12 10:13:09.629: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:09.670: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"connection_ack"}
+2022-10-12 10:13:09.671: INFO: gql.WebSocketLink.898851966: connect(124625): ws(521935887): sub(69393449): Got connection ack
+2022-10-12 10:13:09.671: FINE: gql.WebSocketLink.898851966: Restarting 0 requests
+2022-10-12 10:13:09.672: INFO: gql.WebSocketLink.898851966: connect(124625): ws(521935887): sub(69393449): Connection initialized
+2022-10-12 10:13:09.672: INFO: gql.WebSocketLink.898851966: Change status to connected
+2022-10-12 10:13:09.672: FINEST: gql.WebSocketLink.898851966: connect(124625): ws(521935887): sub(69393449): Finished successfully
+2022-10-12 10:13:09.672: FINE: gql.WebSocketLink.898851966: Send StartOperation for ac614d61-c137-478c-b91e-f58b8dce5863
+2022-10-12 10:13:09.677: FINEST: gql.WebSocketLink.898851966: Encoded message: {"type":"start","id":"ac614d61-c137-478c-b91e-f58b8dce5863","payload":{"operationName":"GetTrailsReview","variables":{"orderBy":"asc","userId":"F3BOp962SUNB6VO1gQO5xqMlIaS2","onlyNotDeleted":false},"query":"fragment Trail on trail {\n  __typename\n  id\n  name\n  ...TrailCardFields\n}\n\nquery GetManagedOrgs {\n  __typename\n  organisation(order_by: {name: asc}) {\n    __typename\n    ...Organisation\n  }\n}\n\nsubscription GetTrailsReview($orderBy: order_by!, $userId: String!, $onlyNotDeleted: Boolean!) {\n  vw_trail_reviews(order_by: {original_trail: {name: $orderBy}}, where: {original_trail: {_or: [{deleted_at: {_is_null: true}}, {deleted_at: {_is_null: $onlyNotDeleted}}], organisation: {organisation_memberships: {_and: {member_type: {_eq: admin}, user_id: {_eq: $userId}}}}}}) {\n    __typename\n    original_trail {\n      __typename\n      ...Trail\n      deleted_at\n    }\n    pending_reviews\n  }\n}\n\nsubscription GetTrails($orderBy: order_by!, $userId: String!, $onlyNotDeleted: Boolean!) {\n  trail(order_by: {name: $orderBy}, where: {_or: [{deleted_at: {_is_null: true}}, {deleted_at: {_is_null: $onlyNotDeleted}}], organisation: {organisation_memberships: {_and: {member_type: {_eq: admin}, user_id: {_eq: $userId}}}}}) {\n    __typename\n    ...Trail\n    original_trail {\n      __typename\n      trail_review_stat {\n        __typename\n        pending_reviews\n      }\n    }\n    deleted_at\n  }\n}\n\nmutation CreateTrail($trail: trail_insert_input!) {\n  __typename\n  insert_trail_one(object: $trail) {\n    __typename\n    ...Trail\n  }\n}\n\nmutation SoftDeleteTrail($id: uuid!, $time: timestamptz) {\n  __typename\n  update_trail_by_pk(pk_columns: {id: $id}, _set: {deleted_at: $time}) {\n    __typename\n    ...Trail\n  }\n}\n\nsubscription GetActivities($trunc: String, $tzoffset: Int) {\n  ob_get_activities(args: {trunc: $trunc, tzoffset: $tzoffset}) {\n    __typename\n    time\n    created\n    planned\n    started\n    gaveup\n    finished\n    rejected\n    original_id\n  }\n}\n\nsubscription GetToplist($originalId: uuid) {\n  activity(where: {_and: {trail_config: {trail: {original_id: {_eq: $originalId}}}}, start_at: {_is_null: false}, end_at: {_is_null: false}}) {\n    __typename\n    id\n    ...ActivityTimes\n    created_by {\n      __typename\n      ...Profile\n    }\n    trail_config {\n      __typename\n      ...TrailConfig\n    }\n  }\n}\n\nsubscription GetHistory($userId: String!) {\n  activity(where: {_and: {start_at: {_is_null: false}, end_at: {_is_null: false}, trail_config: {trail: {organisation: {organisation_memberships: {_and: {member_type: {_eq: admin}, user_id: {_eq: $userId}}}}}}}}) {\n    __typename\n    ...ActivityTimes\n    created_by {\n      __typename\n      name\n      birth_year\n      address\n      email\n      phone\n    }\n    trail_config {\n      __typename\n      activity_type {\n        __typename\n        ...ActivityType\n      }\n      reward_type {\n        __typename\n        ...RewardType\n      }\n      trail {\n        __typename\n        name\n      }\n      trail_id\n    }\n  }\n}\n\nsubscription GetReachedCheckpoints($activityId: uuid!) {\n  activity_by_pk(id: $activityId) {\n    __typename\n    id\n    activity__pathpoints(where: {checkpoint_id: {_is_null: false}}, order_by: [{reached_at: asc}]) {\n      __typename\n      reached_at\n      checkpoint {\n        __typename\n        ...Checkpoint\n      }\n    }\n    trail_config {\n      __typename\n      trail {\n        __typename\n        circular_checkpoints\n        checkpoints(order_by: {index: asc}) {\n          __typename\n          ...Checkpoint\n        }\n      }\n    }\n    ...ActivityStateFields\n  }\n}\n\nsubscription AdminQueryTrailDetails($id: uuid!) {\n  trail_by_pk(id: $id) {\n    __typename\n    id\n    trail_path\n    ...TrailCardFields\n    ...NewEntryStepsFields\n    checkpoints(order_by: {index: asc}) {\n      __typename\n      ...Checkpoint\n    }\n  }\n}\n\nquery AdminQueryEditTrail($id: uuid!) {\n  __typename\n  trail_by_pk(id: $id) {\n    __typename\n    id\n    trail_path\n    ...TrailCardFields\n    ...NewEntryStepsFields\n    checkpoints(order_by: {index: asc}) {\n      __typename\n      ...Checkpoint\n    }\n  }\n}\n\nsubscription GetPositionsByTrailId($id: uuid!) {\n  activity(where: {_and: {start_at: {_is_null: false}, giveup_at: {_is_null: true}, end_at: {_is_null: true}, deleted_at: {_is_null: true}, rejected_at: {_is_null: true}}, trail_config: {trail_id: {_eq: $id}}}) {\n    __typename\n    id\n    last_path_point {\n      __typename\n      location\n      created_at\n    }\n    created_by {\n      __typename\n      id\n      name\n    }\n    trail_config {\n      __typename\n      trail {\n        __typename\n        id\n      }\n      activity_type {\n        __typename\n        ...ActivityType\n      }\n      reward_type {\n        __typename\n        ...RewardType\n      }\n    }\n  }\n}\n\nquery GetFileUri($id: uuid!) {\n  __typename\n  file_by_pk(id: $id) {\n    __typename\n    uri\n  }\n}\n\nmutation SetGuideCompleted($id: String!) {\n  __typename\n  update_profile_by_pk(pk_columns: {id: $id}, _set: {guide_completed: true}) {\n    __typename\n    id\n    guide_completed\n  }\n}\n\nmutation InsertTrailFile($trail_id: uuid!, $file_id: uuid!) {\n  __typename\n  insert_trail_files_one(object: {file_id: $file_id, trail_id: $trail_id}) {\n    __typename\n    file_id\n    id\n    trail_id\n  }\n}\n\nfragment ActivityType on activity_type {\n  __typename\n  id\n  name_en\n  name_hu\n  material_icon_name\n  weight\n}\n\nfragment RewardType on reward_type {\n  __typename\n  id\n  name_en\n  name_hu\n  material_icon_name\n  weight\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  gender\n  guide_completed\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n}\n\nfragment FullProfile on vw_full_profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n  organisations_created_by_me {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}\n\nfragment ActivityTimes on activity {\n  __typename\n  start_at\n  end_at\n  planned_at\n}\n\nfragment Checkpoint on checkpoint {\n  __typename\n  id\n  name\n  index\n  location\n  range_meters\n  file_id\n}\n\nfragment CheckpointExt on checkpoint {\n  __typename\n  ...Checkpoint\n  description\n}\n\nfragment NewEntryStepsFields on trail {\n  __typename\n  id\n  deleted_at\n  payment_info\n  trail_configs {\n    __typename\n    ...TrailConfig\n  }\n  organisation {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment TrailConfig on trail_config {\n  __typename\n  id\n  trail_id\n  completion_note\n  limit_seconds\n  pricing\n  approve_required\n  activity_type {\n    __typename\n    ...ActivityType\n  }\n  reward_type {\n    __typename\n    ...RewardType\n  }\n}\n\nfragment TrailCardFields on trail {\n  __typename\n  name\n  summary\n  description\n  summary_path\n  elevation_meters\n  length_meters\n  minimum_height_meters\n  maximum_height_meters\n  popularity\n  circular_checkpoints\n  accessible\n  difficulty\n  original_id\n  payment_info\n  trail_configs {\n    __typename\n    ...TrailConfig\n  }\n}\n\nfragment ActivityStateFields on activity {\n  __typename\n  deleted_at\n  planned_at\n  approved_at\n  start_at\n  end_at\n  giveup_at\n  rejected_at\n  trail_config {\n    __typename\n    id\n    approve_required\n  }\n}\n\nfragment Review on review {\n  __typename\n  caption\n  created_at\n  description\n  id\n  rating\n  activity_id\n  accepted_at\n  rejected_at\n  admin_comment\n  reviewed_by_id\n}\n\nfragment ActivityReviews on activity {\n  __typename\n  review {\n    __typename\n    ...Review\n  }\n  created_by {\n    __typename\n    name\n    id\n  }\n  id\n  end_at\n}"}}
+2022-10-12 10:13:09.678: FINEST: gql.WebSocketLink.898851966: ... send done for ac614d61-c137-478c-b91e-f58b8dce5863
+2022-10-12 10:13:09.678: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"data","id":"2ace77a3-df09-48b8-90de-6b571cf9216a","payload":{"data":{"vw_full_profile" : [{"__typename":"vw_full_profile","id":"F3BOp962SUNB6VO1gQO5xqMlIaS2","name":"","birth_year":null,"gender":null,"language":null,"email":"belakovics.akos@gmail.com","phone":null,"vat_id":null,"city":null,"address":null,"company_name":null,"postal_code":null,"guide_completed":true,"organisations_created_by_me":[]}]}}}
+2022-10-12 10:13:09.679: INFO: gql.WebSocketLink.645069874: Change status to connected
+2022-10-12 10:13:09.682: FINER: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#2063725984): Got data
+2022-10-12 10:13:09.682: FINEST: gql.links.MultiMutationLink: (GetCurrentUserProfile/2063725984): Got first response
+2022-10-12 10:13:09.683: INFO: gql.links.MultiMutationLink: (GetCurrentUserProfile/2063725984): is done
+2022-10-12 10:13:09.685: FINEST: gql.links.MultiMutationLink: (GetCurrentUserProfile/2063725984): Throttling query response...
+2022-10-12 10:13:09.686: FINEST: gql.links.MultiMutationLink: (GetCurrentUserProfile/2063725984): Releasing response for GetCurrentUserProfile#2063725984 {id: F3BOp962SUNB6VO1gQO5xqMlIaS2}
+2022-10-12 10:13:09.694: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetCurrentUserProfile
+2022-10-12 10:13:09.706: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2022-10-12 10:13:09.707: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:09.708: INFO: gql.WebSocketLink.898851966: Change status to idle
+2022-10-12 10:13:09.720: INFO: gql.AppGqlClient: Enqueue 0 mutations from persistence
+2022-10-12 10:13:09.721: INFO: gql.AppGqlClient: Enqueue done
+2022-10-12 10:13:09.723: INFO: gql.links.LogRequestsLink: Request sent: InsertOrganisation
+2022-10-12 10:13:09.726: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Incoming request: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}
+2022-10-12 10:13:09.732: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Mutation saved to box with id 0
+2022-10-12 10:13:09.733: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Register request on listen: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}. Queue length: 0
+2022-10-12 10:13:09.734: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): run a single mutation, no batching
+2022-10-12 10:13:09.735: INFO: gql.WebSocketLink.496145206: Incoming request InsertOrganisation#724468180 (2c6f4ed0-3771-4eed-a3ee-cbe963b6ca93) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:13:09.736: FINE: gql.WebSocketLink.496145206: Listening on InsertOrganisation#724468180 (2c6f4ed0-3771-4eed-a3ee-cbe963b6ca93) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:13:09.737: INFO: gql.WebSocketLink.496145206: connect(144508): Connecting...
+2022-10-12 10:13:09.737: INFO: gql.WebSocketLink.496145206: Change status to connecting
+2022-10-12 10:13:09.738: FINE: gql.WebSocketLink.496145206: connect(144508): Run channel generator
+2022-10-12 10:13:09.741: FINEST: gql.links.MultiMutationLink: Completing 468562841...
+2022-10-12 10:13:09.744: FINEST: gql.WebSocketLink.496145206: Encoded message: {"type":"connection_init","payload":{"headers":{"Authorization":"Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk5NjJmMDRmZWVkOTU0NWNlMjEzNGFiNTRjZWVmNTgxYWYyNGJhZmYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vaW5zdGF0cmFpbC1jMTQ2YiIsImF1ZCI6Imluc3RhdHJhaWwtYzE0NmIiLCJhdXRoX3RpbWUiOjE2NjU1NjAyOTQsInVzZXJfaWQiOiJGM0JPcDk2MlNVTkI2Vk8xZ1FPNXhxTWxJYVMyIiwic3ViIjoiRjNCT3A5NjJTVU5CNlZPMWdRTzV4cU1sSWFTMiIsImlhdCI6MTY2NTU2MDI5NCwiZXhwIjoxNjY1NTYzODk0LCJlbWFpbCI6ImJlbGFrb3ZpY3MuYWtvc0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJhcHBsZS5jb20iOlsiMDAwMTI1LjAzMDQ0NjZkYzY3YTQyMDlhMDAyZTUzMGJiMTM5M2ExLjE3MTIiXSwiZW1haWwiOlsiYmVsYWtvdmljcy5ha29zQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.ioLORloJPfbfw_R90eNRoULeXwdqBChcvXp7Jjky1XYPtO0STMzqcLpvUUe6454wbzOtI-IpbsPrFSEmH-kNHhPKvxFijDAkIu4XZZTVfAKTrgiTYPr4bSKV-nBIngCn5njwA3yESSxBv7HhflwKS9puLMNw85dxtjCnB2e0Lj2tRIzBEt3XONTzQ4bad6nMTZ5V14K6T3Qz_behHxRdQwEf6XtRyRXPnrqls58u7H1PZwFqUwoWC6qd7qL_DqgFORAOCxtLMKhwoutnkCRI5nyiNR_XIGY3oG0bQQh1H75WYq_F3-Z562ti2nfH4msJokez8VoVyofYxyk8FsQvxg","X-Hasura-Role":"org_admin"}}}
+2022-10-12 10:13:09.744: INFO: gql.WebSocketLink.496145206: connect(144508): ws(385170652): sub(798026441): Initial payload sent, wait for ack
+2022-10-12 10:13:09.827: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"data","id":"ac614d61-c137-478c-b91e-f58b8dce5863","payload":{"data":{"vw_trail_reviews" : []}}}
+2022-10-12 10:13:09.828: INFO: gql.WebSocketLink.898851966: Change status to connected
+2022-10-12 10:13:09.829: FINER: gql.links.RetryUntilResponseLink: (GetTrailsReview#1551472077): Got data
+2022-10-12 10:13:09.830: FINEST: gql.links.MultiMutationLink: (GetTrailsReview/1551472077): Got first response
+2022-10-12 10:13:09.831: INFO: gql.links.MultiMutationLink: (GetTrailsReview/1551472077): is done
+2022-10-12 10:13:09.831: FINEST: gql.links.MultiMutationLink: (GetTrailsReview/1551472077): Throttling query response...
+2022-10-12 10:13:09.833: FINEST: gql.links.MultiMutationLink: (GetTrailsReview/1551472077): Releasing response for GetTrailsReview#1551472077 {orderBy: asc, userId: F3BOp962SUNB6VO1gQO5xqMlIaS2, onlyNotDeleted: false}
+2022-10-12 10:13:09.841: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetTrailsReview
+2022-10-12 10:13:09.857: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetTrailsReview
+2022-10-12 10:13:09.864: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:13:09.899: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"connection_ack"}
+2022-10-12 10:13:09.900: INFO: gql.WebSocketLink.496145206: connect(144508): ws(385170652): sub(798026441): Got connection ack
+2022-10-12 10:13:09.901: FINE: gql.WebSocketLink.496145206: Restarting 0 requests
+2022-10-12 10:13:09.901: INFO: gql.WebSocketLink.496145206: connect(144508): ws(385170652): sub(798026441): Connection initialized
+2022-10-12 10:13:09.902: INFO: gql.WebSocketLink.496145206: Change status to connected
+2022-10-12 10:13:09.902: FINEST: gql.WebSocketLink.496145206: connect(144508): ws(385170652): sub(798026441): Finished successfully
+2022-10-12 10:13:09.902: FINE: gql.WebSocketLink.496145206: Send StartOperation for 2c6f4ed0-3771-4eed-a3ee-cbe963b6ca93
+2022-10-12 10:13:09.902: FINEST: gql.WebSocketLink.496145206: Encoded message: {"type":"start","id":"2c6f4ed0-3771-4eed-a3ee-cbe963b6ca93","payload":{"operationName":"InsertOrganisation","variables":{"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}},"query":"mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:13:09.903: FINEST: gql.WebSocketLink.496145206: ... send done for 2c6f4ed0-3771-4eed-a3ee-cbe963b6ca93
+2022-10-12 10:13:09.904: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:13:09.904: INFO: gql.WebSocketLink.496145206: Change status to idle
+2022-10-12 10:13:09.961: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"data","id":"2c6f4ed0-3771-4eed-a3ee-cbe963b6ca93","payload":{"data":null,"errors":[{"extensions":{"path":"$.selectionSet.insert_organisation_one.args.object","code":"constraint-violation"},"message":"Uniqueness violation. duplicate key value violates unique constraint \"organisation_pkey\""}]}}
+2022-10-12 10:13:09.961: INFO: gql.WebSocketLink.496145206: Change status to connected
+2022-10-12 10:13:09.963: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got data
+2022-10-12 10:13:09.963: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"complete","id":"2c6f4ed0-3771-4eed-a3ee-cbe963b6ca93"}
+2022-10-12 10:13:09.965: FINE: gql.WebSocketLink.496145206: Done for InsertOrganisation#724468180 (2c6f4ed0-3771-4eed-a3ee-cbe963b6ca93) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:13:09.965: FINE: gql.WebSocketLink.496145206: Cancel for InsertOrganisation#724468180 (2c6f4ed0-3771-4eed-a3ee-cbe963b6ca93) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:13:09.966: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got done
+2022-10-12 10:13:09.967: FINEST: gql.links.MultiMutationLink: Value sent for 468562841
+2022-10-12 10:13:09.968: FINEST: gql.links.MultiMutationLink: Response stream controller was closed: false
+2022-10-12 10:13:09.968: FINEST: gql.links.MultiMutationLink: Deleting 468562841 (boxId: 0)
+2022-10-12 10:13:09.971: SEVERE: gql.links.LogRequestsLink: Exception occurred while processing GInsertOrganisationReq {
+2022-10-12 10:13:09.971: SEVERE: gql.links.LogRequestsLink:   vars=GInsertOrganisationVars {
+2022-10-12 10:13:09.971: SEVERE: gql.links.LogRequestsLink:     object=Gorganisation_insert_input {
+2022-10-12 10:13:09.971: SEVERE: gql.links.LogRequestsLink:       id=23495e38-a5ad-548c-b9fd-dfc5126d7bcc,
+2022-10-12 10:13:09.971: SEVERE: gql.links.LogRequestsLink:       name=F3BOp962SUNB6VO1gQO5xqMlIaS2,
+2022-10-12 10:13:09.971: SEVERE: gql.links.LogRequestsLink:     },
+2022-10-12 10:13:09.971: SEVERE: gql.links.LogRequestsLink:   },
+2022-10-12 10:13:09.971: SEVERE: gql.links.LogRequestsLink:   operation=Operation(document: DocumentNode("mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"), operationName: InsertOrganisation),
+2022-10-12 10:13:09.971: SEVERE: gql.links.LogRequestsLink:   requestId=auto_id_482231,
+2022-10-12 10:13:09.971: SEVERE: gql.links.LogRequestsLink:   executeOnListen=true,
+2022-10-12 10:13:09.971: SEVERE: gql.links.LogRequestsLink: }: GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:13:09.977: SEVERE: ProfileService: Exception in ensure organisation - GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation}))): GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:13:09.983: INFO: gql.links.LogRequestsLink: Request sent: GetAgreements
+2022-10-12 10:13:09.986: INFO: gql.links.MultiMutationLink: (InsertOrganisation/468562841): is done
+2022-10-12 10:13:09.989: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Incoming request: GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:13:09.996: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Waiting for first response...
+2022-10-12 10:13:09.997: INFO: gql.WebSocketLink.645069874: Incoming request GetAgreements#996372683 (3f035fe1-8cbd-4792-91c8-4d4485ba7342) {"includeUserAgreements":true}
+2022-10-12 10:13:09.998: FINE: gql.WebSocketLink.645069874: Listening on GetAgreements#996372683 (3f035fe1-8cbd-4792-91c8-4d4485ba7342) {"includeUserAgreements":true}
+2022-10-12 10:13:09.999: FINEST: gql.WebSocketLink.645069874: connect(124918): ws(529687041): Finished successfully
+2022-10-12 10:13:09.999: FINE: gql.WebSocketLink.645069874: Send StartOperation for 3f035fe1-8cbd-4792-91c8-4d4485ba7342
+2022-10-12 10:13:10.000: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"start","id":"3f035fe1-8cbd-4792-91c8-4d4485ba7342","payload":{"operationName":"GetAgreements","variables":{"includeUserAgreements":true},"query":"query GetAgreements($includeUserAgreements: Boolean!) {\n  __typename\n  agreement(where: {next_version_id: {_is_null: true}}) {\n    __typename\n    id\n    name_en\n    name_hu\n    changes_en\n    changes_hu\n    content_en\n    content_hu\n    created_at\n    agreement_profiles @include(if: $includeUserAgreements) {\n      __typename\n      id\n      created_at\n    }\n    prev_version {\n      __typename\n      agreement_profiles @include(if: $includeUserAgreements) {\n        __typename\n        id\n        created_at\n      }\n    }\n  }\n}\n\nmutation InsertAcceptAgreements($objects: [agreement_profile_insert_input!]!) {\n  __typename\n  insert_agreement_profile(objects: $objects) {\n    __typename\n    returning {\n      __typename\n      id\n      created_at\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  gender\n  guide_completed\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n}\n\nfragment FullProfile on vw_full_profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n  organisations_created_by_me {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:13:10.001: FINEST: gql.WebSocketLink.645069874: ... send done for 3f035fe1-8cbd-4792-91c8-4d4485ba7342
+2022-10-12 10:13:10.050: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"data","id":"3f035fe1-8cbd-4792-91c8-4d4485ba7342","payload":{"data":{"__typename":"query_root","agreement":[]}}}
+2022-10-12 10:13:10.051: FINER: gql.links.RetryUntilResponseLink: (GetAgreements#847320954): Got data
+2022-10-12 10:13:10.052: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Got first response
+2022-10-12 10:13:10.052: INFO: gql.links.MultiMutationLink: (GetAgreements/847320954): is done
+2022-10-12 10:13:10.053: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Throttling query response...
+2022-10-12 10:13:10.055: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Releasing response for GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:13:10.059: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetAgreements
+2022-10-12 10:13:10.060: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Cancel request
+2022-10-12 10:13:10.063: FINE: gql.WebSocketLink.645069874: Cancel for GetAgreements#996372683 (3f035fe1-8cbd-4792-91c8-4d4485ba7342) {"includeUserAgreements":true}
+2022-10-12 10:13:10.064: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"stop","id":"3f035fe1-8cbd-4792-91c8-4d4485ba7342"}
+2022-10-12 10:13:10.066: INFO: gql.links.LogRequestsLink: Request sent: InsertOrganisation
+2022-10-12 10:13:10.068: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"complete","id":"3f035fe1-8cbd-4792-91c8-4d4485ba7342"}
+2022-10-12 10:13:10.071: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Incoming request: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}
+2022-10-12 10:13:10.075: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Mutation saved to box with id 1
+2022-10-12 10:13:10.075: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Register request on listen: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}. Queue length: 0
+2022-10-12 10:13:10.076: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): run a single mutation, no batching
+2022-10-12 10:13:10.077: INFO: gql.WebSocketLink.496145206: Incoming request InsertOrganisation#424614481 (fe8c24d6-f874-4f09-9690-6ce0defc3fb1) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:13:10.078: FINE: gql.WebSocketLink.496145206: Listening on InsertOrganisation#424614481 (fe8c24d6-f874-4f09-9690-6ce0defc3fb1) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:13:10.078: FINEST: gql.links.MultiMutationLink: Completing 468562841...
+2022-10-12 10:13:10.079: FINEST: gql.WebSocketLink.496145206: connect(123974): ws(335744750): Finished successfully
+2022-10-12 10:13:10.079: FINE: gql.WebSocketLink.496145206: Send StartOperation for fe8c24d6-f874-4f09-9690-6ce0defc3fb1
+2022-10-12 10:13:10.080: FINEST: gql.WebSocketLink.496145206: Encoded message: {"type":"start","id":"fe8c24d6-f874-4f09-9690-6ce0defc3fb1","payload":{"operationName":"InsertOrganisation","variables":{"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}},"query":"mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:13:10.080: FINEST: gql.WebSocketLink.496145206: ... send done for fe8c24d6-f874-4f09-9690-6ce0defc3fb1
+2022-10-12 10:13:10.135: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"data","id":"fe8c24d6-f874-4f09-9690-6ce0defc3fb1","payload":{"data":null,"errors":[{"extensions":{"path":"$.selectionSet.insert_organisation_one.args.object","code":"constraint-violation"},"message":"Uniqueness violation. duplicate key value violates unique constraint \"organisation_pkey\""}]}}
+2022-10-12 10:13:10.138: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got data
+2022-10-12 10:13:10.139: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"complete","id":"fe8c24d6-f874-4f09-9690-6ce0defc3fb1"}
+2022-10-12 10:13:10.141: FINE: gql.WebSocketLink.496145206: Done for InsertOrganisation#424614481 (fe8c24d6-f874-4f09-9690-6ce0defc3fb1) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:13:10.141: FINE: gql.WebSocketLink.496145206: Cancel for InsertOrganisation#424614481 (fe8c24d6-f874-4f09-9690-6ce0defc3fb1) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:13:10.142: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got done
+2022-10-12 10:13:10.142: FINEST: gql.links.MultiMutationLink: Value sent for 468562841
+2022-10-12 10:13:10.142: FINEST: gql.links.MultiMutationLink: Response stream controller was closed: false
+2022-10-12 10:13:10.143: FINEST: gql.links.MultiMutationLink: Deleting 468562841 (boxId: 1)
+2022-10-12 10:13:10.144: SEVERE: gql.links.LogRequestsLink: Exception occurred while processing GInsertOrganisationReq {
+2022-10-12 10:13:10.144: SEVERE: gql.links.LogRequestsLink:   vars=GInsertOrganisationVars {
+2022-10-12 10:13:10.144: SEVERE: gql.links.LogRequestsLink:     object=Gorganisation_insert_input {
+2022-10-12 10:13:10.144: SEVERE: gql.links.LogRequestsLink:       id=23495e38-a5ad-548c-b9fd-dfc5126d7bcc,
+2022-10-12 10:13:10.144: SEVERE: gql.links.LogRequestsLink:       name=F3BOp962SUNB6VO1gQO5xqMlIaS2,
+2022-10-12 10:13:10.144: SEVERE: gql.links.LogRequestsLink:     },
+2022-10-12 10:13:10.144: SEVERE: gql.links.LogRequestsLink:   },
+2022-10-12 10:13:10.144: SEVERE: gql.links.LogRequestsLink:   operation=Operation(document: DocumentNode("mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"), operationName: InsertOrganisation),
+2022-10-12 10:13:10.144: SEVERE: gql.links.LogRequestsLink:   requestId=auto_id_891458,
+2022-10-12 10:13:10.144: SEVERE: gql.links.LogRequestsLink:   executeOnListen=true,
+2022-10-12 10:13:10.144: SEVERE: gql.links.LogRequestsLink: }: GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:13:10.152: SEVERE: ProfileService: Exception in ensure organisation - GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation}))): GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:13:10.156: INFO: gql.links.LogRequestsLink: Request sent: GetAgreements
+2022-10-12 10:13:10.159: INFO: gql.links.MultiMutationLink: (InsertOrganisation/468562841): is done
+2022-10-12 10:13:10.161: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Incoming request: GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:13:10.167: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetAgreements
+2022-10-12 10:13:10.169: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Waiting for first response...
+2022-10-12 10:13:10.170: INFO: gql.WebSocketLink.645069874: Incoming request GetAgreements#1134449492 (e0464e72-aff0-4cab-a0e8-3f9035f83c1c) {"includeUserAgreements":true}
+2022-10-12 10:13:10.172: FINE: gql.WebSocketLink.645069874: Listening on GetAgreements#1134449492 (e0464e72-aff0-4cab-a0e8-3f9035f83c1c) {"includeUserAgreements":true}
+2022-10-12 10:13:10.172: FINEST: gql.WebSocketLink.645069874: connect(104799): ws(241490068): Finished successfully
+2022-10-12 10:13:10.173: FINE: gql.WebSocketLink.645069874: Send StartOperation for e0464e72-aff0-4cab-a0e8-3f9035f83c1c
+2022-10-12 10:13:10.174: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"start","id":"e0464e72-aff0-4cab-a0e8-3f9035f83c1c","payload":{"operationName":"GetAgreements","variables":{"includeUserAgreements":true},"query":"query GetAgreements($includeUserAgreements: Boolean!) {\n  __typename\n  agreement(where: {next_version_id: {_is_null: true}}) {\n    __typename\n    id\n    name_en\n    name_hu\n    changes_en\n    changes_hu\n    content_en\n    content_hu\n    created_at\n    agreement_profiles @include(if: $includeUserAgreements) {\n      __typename\n      id\n      created_at\n    }\n    prev_version {\n      __typename\n      agreement_profiles @include(if: $includeUserAgreements) {\n        __typename\n        id\n        created_at\n      }\n    }\n  }\n}\n\nmutation InsertAcceptAgreements($objects: [agreement_profile_insert_input!]!) {\n  __typename\n  insert_agreement_profile(objects: $objects) {\n    __typename\n    returning {\n      __typename\n      id\n      created_at\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  gender\n  guide_completed\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n}\n\nfragment FullProfile on vw_full_profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n  organisations_created_by_me {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:13:10.174: FINEST: gql.WebSocketLink.645069874: ... send done for e0464e72-aff0-4cab-a0e8-3f9035f83c1c
+2022-10-12 10:13:10.246: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"data","id":"e0464e72-aff0-4cab-a0e8-3f9035f83c1c","payload":{"data":{"__typename":"query_root","agreement":[]}}}
+2022-10-12 10:13:10.249: FINER: gql.links.RetryUntilResponseLink: (GetAgreements#847320954): Got data
+2022-10-12 10:13:10.250: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Got first response
+2022-10-12 10:13:10.251: INFO: gql.links.MultiMutationLink: (GetAgreements/847320954): is done
+2022-10-12 10:13:10.251: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Throttling query response...
+2022-10-12 10:13:10.252: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Releasing response for GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:13:10.256: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetAgreements
+2022-10-12 10:13:10.257: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Cancel request
+2022-10-12 10:13:10.260: FINE: gql.WebSocketLink.645069874: Cancel for GetAgreements#1134449492 (e0464e72-aff0-4cab-a0e8-3f9035f83c1c) {"includeUserAgreements":true}
+2022-10-12 10:13:10.260: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"stop","id":"e0464e72-aff0-4cab-a0e8-3f9035f83c1c"}
+2022-10-12 10:13:10.288: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"complete","id":"e0464e72-aff0-4cab-a0e8-3f9035f83c1c"}
+2022-10-12 10:13:11.148: INFO: gql.links.LogRequestsLink: Request sent: GetTrails
+2022-10-12 10:13:11.218: FINEST: gql.links.MultiMutationLink: (GetTrails/66197781): Incoming request: GetTrails#66197781 {orderBy: asc, userId: F3BOp962SUNB6VO1gQO5xqMlIaS2, onlyNotDeleted: true}
+2022-10-12 10:13:11.265: FINEST: gql.links.MultiMutationLink: (GetTrails/66197781): Waiting for first response...
+2022-10-12 10:13:11.273: INFO: gql.WebSocketLink.898851966: Incoming request GetTrails#1526248129 (8e73c4c5-91db-4d28-8193-a402f4de76fb) {"orderBy":"asc","userId":"F3BOp962SUNB6VO1gQO5xqMlIaS2","onlyNotDeleted":true}
+2022-10-12 10:13:11.277: FINE: gql.WebSocketLink.898851966: Listening on GetTrails#1526248129 (8e73c4c5-91db-4d28-8193-a402f4de76fb) {"orderBy":"asc","userId":"F3BOp962SUNB6VO1gQO5xqMlIaS2","onlyNotDeleted":true}
+2022-10-12 10:13:11.278: FINEST: gql.WebSocketLink.898851966: connect(105621): ws(61504765): Finished successfully
+2022-10-12 10:13:11.278: FINE: gql.WebSocketLink.898851966: Send StartOperation for 8e73c4c5-91db-4d28-8193-a402f4de76fb
+2022-10-12 10:13:11.285: FINEST: gql.WebSocketLink.898851966: Encoded message: {"type":"start","id":"8e73c4c5-91db-4d28-8193-a402f4de76fb","payload":{"operationName":"GetTrails","variables":{"orderBy":"asc","userId":"F3BOp962SUNB6VO1gQO5xqMlIaS2","onlyNotDeleted":true},"query":"fragment Trail on trail {\n  __typename\n  id\n  name\n  ...TrailCardFields\n}\n\nquery GetManagedOrgs {\n  __typename\n  organisation(order_by: {name: asc}) {\n    __typename\n    ...Organisation\n  }\n}\n\nsubscription GetTrailsReview($orderBy: order_by!, $userId: String!, $onlyNotDeleted: Boolean!) {\n  vw_trail_reviews(order_by: {original_trail: {name: $orderBy}}, where: {original_trail: {_or: [{deleted_at: {_is_null: true}}, {deleted_at: {_is_null: $onlyNotDeleted}}], organisation: {organisation_memberships: {_and: {member_type: {_eq: admin}, user_id: {_eq: $userId}}}}}}) {\n    __typename\n    original_trail {\n      __typename\n      ...Trail\n      deleted_at\n    }\n    pending_reviews\n  }\n}\n\nsubscription GetTrails($orderBy: order_by!, $userId: String!, $onlyNotDeleted: Boolean!) {\n  trail(order_by: {name: $orderBy}, where: {_or: [{deleted_at: {_is_null: true}}, {deleted_at: {_is_null: $onlyNotDeleted}}], organisation: {organisation_memberships: {_and: {member_type: {_eq: admin}, user_id: {_eq: $userId}}}}}) {\n    __typename\n    ...Trail\n    original_trail {\n      __typename\n      trail_review_stat {\n        __typename\n        pending_reviews\n      }\n    }\n    deleted_at\n  }\n}\n\nmutation CreateTrail($trail: trail_insert_input!) {\n  __typename\n  insert_trail_one(object: $trail) {\n    __typename\n    ...Trail\n  }\n}\n\nmutation SoftDeleteTrail($id: uuid!, $time: timestamptz) {\n  __typename\n  update_trail_by_pk(pk_columns: {id: $id}, _set: {deleted_at: $time}) {\n    __typename\n    ...Trail\n  }\n}\n\nsubscription GetActivities($trunc: String, $tzoffset: Int) {\n  ob_get_activities(args: {trunc: $trunc, tzoffset: $tzoffset}) {\n    __typename\n    time\n    created\n    planned\n    started\n    gaveup\n    finished\n    rejected\n    original_id\n  }\n}\n\nsubscription GetToplist($originalId: uuid) {\n  activity(where: {_and: {trail_config: {trail: {original_id: {_eq: $originalId}}}}, start_at: {_is_null: false}, end_at: {_is_null: false}}) {\n    __typename\n    id\n    ...ActivityTimes\n    created_by {\n      __typename\n      ...Profile\n    }\n    trail_config {\n      __typename\n      ...TrailConfig\n    }\n  }\n}\n\nsubscription GetHistory($userId: String!) {\n  activity(where: {_and: {start_at: {_is_null: false}, end_at: {_is_null: false}, trail_config: {trail: {organisation: {organisation_memberships: {_and: {member_type: {_eq: admin}, user_id: {_eq: $userId}}}}}}}}) {\n    __typename\n    ...ActivityTimes\n    created_by {\n      __typename\n      name\n      birth_year\n      address\n      email\n      phone\n    }\n    trail_config {\n      __typename\n      activity_type {\n        __typename\n        ...ActivityType\n      }\n      reward_type {\n        __typename\n        ...RewardType\n      }\n      trail {\n        __typename\n        name\n      }\n      trail_id\n    }\n  }\n}\n\nsubscription GetReachedCheckpoints($activityId: uuid!) {\n  activity_by_pk(id: $activityId) {\n    __typename\n    id\n    activity__pathpoints(where: {checkpoint_id: {_is_null: false}}, order_by: [{reached_at: asc}]) {\n      __typename\n      reached_at\n      checkpoint {\n        __typename\n        ...Checkpoint\n      }\n    }\n    trail_config {\n      __typename\n      trail {\n        __typename\n        circular_checkpoints\n        checkpoints(order_by: {index: asc}) {\n          __typename\n          ...Checkpoint\n        }\n      }\n    }\n    ...ActivityStateFields\n  }\n}\n\nsubscription AdminQueryTrailDetails($id: uuid!) {\n  trail_by_pk(id: $id) {\n    __typename\n    id\n    trail_path\n    ...TrailCardFields\n    ...NewEntryStepsFields\n    checkpoints(order_by: {index: asc}) {\n      __typename\n      ...Checkpoint\n    }\n  }\n}\n\nquery AdminQueryEditTrail($id: uuid!) {\n  __typename\n  trail_by_pk(id: $id) {\n    __typename\n    id\n    trail_path\n    ...TrailCardFields\n    ...NewEntryStepsFields\n    checkpoints(order_by: {index: asc}) {\n      __typename\n      ...Checkpoint\n    }\n  }\n}\n\nsubscription GetPositionsByTrailId($id: uuid!) {\n  activity(where: {_and: {start_at: {_is_null: false}, giveup_at: {_is_null: true}, end_at: {_is_null: true}, deleted_at: {_is_null: true}, rejected_at: {_is_null: true}}, trail_config: {trail_id: {_eq: $id}}}) {\n    __typename\n    id\n    last_path_point {\n      __typename\n      location\n      created_at\n    }\n    created_by {\n      __typename\n      id\n      name\n    }\n    trail_config {\n      __typename\n      trail {\n        __typename\n        id\n      }\n      activity_type {\n        __typename\n        ...ActivityType\n      }\n      reward_type {\n        __typename\n        ...RewardType\n      }\n    }\n  }\n}\n\nquery GetFileUri($id: uuid!) {\n  __typename\n  file_by_pk(id: $id) {\n    __typename\n    uri\n  }\n}\n\nmutation SetGuideCompleted($id: String!) {\n  __typename\n  update_profile_by_pk(pk_columns: {id: $id}, _set: {guide_completed: true}) {\n    __typename\n    id\n    guide_completed\n  }\n}\n\nmutation InsertTrailFile($trail_id: uuid!, $file_id: uuid!) {\n  __typename\n  insert_trail_files_one(object: {file_id: $file_id, trail_id: $trail_id}) {\n    __typename\n    file_id\n    id\n    trail_id\n  }\n}\n\nfragment ActivityType on activity_type {\n  __typename\n  id\n  name_en\n  name_hu\n  material_icon_name\n  weight\n}\n\nfragment RewardType on reward_type {\n  __typename\n  id\n  name_en\n  name_hu\n  material_icon_name\n  weight\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  gender\n  guide_completed\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n}\n\nfragment FullProfile on vw_full_profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n  organisations_created_by_me {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}\n\nfragment ActivityTimes on activity {\n  __typename\n  start_at\n  end_at\n  planned_at\n}\n\nfragment Checkpoint on checkpoint {\n  __typename\n  id\n  name\n  index\n  location\n  range_meters\n  file_id\n}\n\nfragment CheckpointExt on checkpoint {\n  __typename\n  ...Checkpoint\n  description\n}\n\nfragment NewEntryStepsFields on trail {\n  __typename\n  id\n  deleted_at\n  payment_info\n  trail_configs {\n    __typename\n    ...TrailConfig\n  }\n  organisation {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment TrailConfig on trail_config {\n  __typename\n  id\n  trail_id\n  completion_note\n  limit_seconds\n  pricing\n  approve_required\n  activity_type {\n    __typename\n    ...ActivityType\n  }\n  reward_type {\n    __typename\n    ...RewardType\n  }\n}\n\nfragment TrailCardFields on trail {\n  __typename\n  name\n  summary\n  description\n  summary_path\n  elevation_meters\n  length_meters\n  minimum_height_meters\n  maximum_height_meters\n  popularity\n  circular_checkpoints\n  accessible\n  difficulty\n  original_id\n  payment_info\n  trail_configs {\n    __typename\n    ...TrailConfig\n  }\n}\n\nfragment ActivityStateFields on activity {\n  __typename\n  deleted_at\n  planned_at\n  approved_at\n  start_at\n  end_at\n  giveup_at\n  rejected_at\n  trail_config {\n    __typename\n    id\n    approve_required\n  }\n}\n\nfragment Review on review {\n  __typename\n  caption\n  created_at\n  description\n  id\n  rating\n  activity_id\n  accepted_at\n  rejected_at\n  admin_comment\n  reviewed_by_id\n}\n\nfragment ActivityReviews on activity {\n  __typename\n  review {\n    __typename\n    ...Review\n  }\n  created_by {\n    __typename\n    name\n    id\n  }\n  id\n  end_at\n}"}}
+2022-10-12 10:13:11.289: FINEST: gql.WebSocketLink.898851966: ... send done for 8e73c4c5-91db-4d28-8193-a402f4de76fb
+2022-10-12 10:13:11.815: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"data","id":"8e73c4c5-91db-4d28-8193-a402f4de76fb","payload":{"data":{"trail" : []}}}
+2022-10-12 10:13:11.817: FINER: gql.links.RetryUntilResponseLink: (GetTrails#66197781): Got data
+2022-10-12 10:13:11.818: FINEST: gql.links.MultiMutationLink: (GetTrails/66197781): Got first response
+2022-10-12 10:13:11.819: INFO: gql.links.MultiMutationLink: (GetTrails/66197781): is done
+2022-10-12 10:13:11.819: FINEST: gql.links.MultiMutationLink: (GetTrails/66197781): Throttling query response...
+2022-10-12 10:13:11.822: FINEST: gql.links.MultiMutationLink: (GetTrails/66197781): Releasing response for GetTrails#66197781 {orderBy: asc, userId: F3BOp962SUNB6VO1gQO5xqMlIaS2, onlyNotDeleted: true}
+2022-10-12 10:13:11.830: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetTrails
+2022-10-12 10:13:11.854: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetTrailsReview
+2022-10-12 10:13:11.855: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetTrails
+2022-10-12 10:13:14.488: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:14.488: INFO: gql.WebSocketLink.645069874: Change status to idle
+2022-10-12 10:13:14.631: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:14.631: INFO: gql.WebSocketLink.898851966: Change status to idle
+2022-10-12 10:13:14.859: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:13:14.859: INFO: gql.WebSocketLink.496145206: Change status to idle
+2022-10-12 10:13:19.488: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:19.631: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:19.860: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:13:24.489: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:24.632: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:24.861: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:13:29.491: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:29.632: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:29.862: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:13:34.491: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:34.633: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:34.862: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:13:39.494: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:39.634: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:39.863: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:13:44.494: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:44.636: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:44.865: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:13:49.495: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:49.637: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:49.865: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:13:54.503: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:54.637: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:54.867: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:13:59.498: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:13:59.638: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:13:59.867: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:04.500: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:04.638: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:04.866: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:09.504: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:09.638: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:09.873: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:14.499: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:14.639: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:14.869: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:19.508: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:19.641: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:19.869: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:24.501: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:24.642: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:24.870: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:29.502: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:29.642: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:29.870: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:34.502: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:34.642: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:34.871: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:39.505: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:39.642: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:39.873: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:44.502: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:44.644: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:44.876: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:46.252: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"data","id":"2ace77a3-df09-48b8-90de-6b571cf9216a","payload":{"data":{"vw_full_profile" : [{"__typename":"vw_full_profile","id":"F3BOp962SUNB6VO1gQO5xqMlIaS2","name":"","birth_year":null,"gender":null,"language":null,"email":"belakovics.akos@gmail.com","phone":null,"vat_id":null,"city":null,"address":null,"company_name":null,"postal_code":null,"guide_completed":false,"organisations_created_by_me":[]}]}}}
+2022-10-12 10:14:46.255: INFO: gql.WebSocketLink.645069874: Change status to connected
+2022-10-12 10:14:46.256: FINER: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#2063725984): Got data
+2022-10-12 10:14:46.258: FINEST: gql.links.MultiMutationLink: (GetCurrentUserProfile/2063725984): Throttling query response...
+2022-10-12 10:14:46.261: FINEST: gql.links.MultiMutationLink: (GetCurrentUserProfile/2063725984): Releasing response for GetCurrentUserProfile#2063725984 {id: F3BOp962SUNB6VO1gQO5xqMlIaS2}
+2022-10-12 10:14:46.285: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetCurrentUserProfile
+2022-10-12 10:14:46.302: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2022-10-12 10:14:46.306: INFO: gql.links.LogRequestsLink: Request sent: InsertOrganisation
+2022-10-12 10:14:46.323: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Incoming request: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}
+2022-10-12 10:14:46.338: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Mutation saved to box with id 2
+2022-10-12 10:14:46.339: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Register request on listen: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}. Queue length: 0
+2022-10-12 10:14:46.340: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): run a single mutation, no batching
+2022-10-12 10:14:46.341: INFO: gql.WebSocketLink.496145206: Incoming request InsertOrganisation#797726761 (9e97689c-9adb-43d3-85a8-12d28508fb4b) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:46.342: FINE: gql.WebSocketLink.496145206: Listening on InsertOrganisation#797726761 (9e97689c-9adb-43d3-85a8-12d28508fb4b) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:46.343: FINEST: gql.links.MultiMutationLink: Completing 468562841...
+2022-10-12 10:14:46.344: INFO: gql.WebSocketLink.496145206: Change status to connected
+2022-10-12 10:14:46.344: FINEST: gql.WebSocketLink.496145206: connect(191250): ws(244350283): Finished successfully
+2022-10-12 10:14:46.345: FINE: gql.WebSocketLink.496145206: Send StartOperation for 9e97689c-9adb-43d3-85a8-12d28508fb4b
+2022-10-12 10:14:46.346: FINEST: gql.WebSocketLink.496145206: Encoded message: {"type":"start","id":"9e97689c-9adb-43d3-85a8-12d28508fb4b","payload":{"operationName":"InsertOrganisation","variables":{"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}},"query":"mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:14:46.347: FINEST: gql.WebSocketLink.496145206: ... send done for 9e97689c-9adb-43d3-85a8-12d28508fb4b
+2022-10-12 10:14:46.404: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"data","id":"9e97689c-9adb-43d3-85a8-12d28508fb4b","payload":{"data":null,"errors":[{"extensions":{"path":"$.selectionSet.insert_organisation_one.args.object","code":"constraint-violation"},"message":"Uniqueness violation. duplicate key value violates unique constraint \"organisation_pkey\""}]}}
+2022-10-12 10:14:46.405: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got data
+2022-10-12 10:14:46.436: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"complete","id":"9e97689c-9adb-43d3-85a8-12d28508fb4b"}
+2022-10-12 10:14:46.438: FINE: gql.WebSocketLink.496145206: Done for InsertOrganisation#797726761 (9e97689c-9adb-43d3-85a8-12d28508fb4b) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:46.438: FINE: gql.WebSocketLink.496145206: Cancel for InsertOrganisation#797726761 (9e97689c-9adb-43d3-85a8-12d28508fb4b) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:46.439: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got done
+2022-10-12 10:14:46.439: FINEST: gql.links.MultiMutationLink: Value sent for 468562841
+2022-10-12 10:14:46.439: FINEST: gql.links.MultiMutationLink: Response stream controller was closed: false
+2022-10-12 10:14:46.440: FINEST: gql.links.MultiMutationLink: Deleting 468562841 (boxId: 2)
+2022-10-12 10:14:46.443: SEVERE: gql.links.LogRequestsLink: Exception occurred while processing GInsertOrganisationReq {
+2022-10-12 10:14:46.443: SEVERE: gql.links.LogRequestsLink:   vars=GInsertOrganisationVars {
+2022-10-12 10:14:46.443: SEVERE: gql.links.LogRequestsLink:     object=Gorganisation_insert_input {
+2022-10-12 10:14:46.443: SEVERE: gql.links.LogRequestsLink:       id=23495e38-a5ad-548c-b9fd-dfc5126d7bcc,
+2022-10-12 10:14:46.443: SEVERE: gql.links.LogRequestsLink:       name=F3BOp962SUNB6VO1gQO5xqMlIaS2,
+2022-10-12 10:14:46.443: SEVERE: gql.links.LogRequestsLink:     },
+2022-10-12 10:14:46.443: SEVERE: gql.links.LogRequestsLink:   },
+2022-10-12 10:14:46.443: SEVERE: gql.links.LogRequestsLink:   operation=Operation(document: DocumentNode("mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"), operationName: InsertOrganisation),
+2022-10-12 10:14:46.443: SEVERE: gql.links.LogRequestsLink:   requestId=auto_id_543154,
+2022-10-12 10:14:46.443: SEVERE: gql.links.LogRequestsLink:   executeOnListen=true,
+2022-10-12 10:14:46.443: SEVERE: gql.links.LogRequestsLink: }: GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:14:46.453: SEVERE: ProfileService: Exception in ensure organisation - GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation}))): GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:14:46.458: INFO: gql.links.LogRequestsLink: Request sent: GetAgreements
+2022-10-12 10:14:46.478: INFO: gql.links.MultiMutationLink: (InsertOrganisation/468562841): is done
+2022-10-12 10:14:46.481: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Incoming request: GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:14:46.488: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetAgreements
+2022-10-12 10:14:46.489: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Waiting for first response...
+2022-10-12 10:14:46.490: INFO: gql.WebSocketLink.645069874: Incoming request GetAgreements#1641091101 (867a506f-a7bd-458c-a6ff-1d71fb85229f) {"includeUserAgreements":true}
+2022-10-12 10:14:46.491: FINE: gql.WebSocketLink.645069874: Listening on GetAgreements#1641091101 (867a506f-a7bd-458c-a6ff-1d71fb85229f) {"includeUserAgreements":true}
+2022-10-12 10:14:46.492: FINEST: gql.WebSocketLink.645069874: connect(133606): ws(568087462): Finished successfully
+2022-10-12 10:14:46.492: FINE: gql.WebSocketLink.645069874: Send StartOperation for 867a506f-a7bd-458c-a6ff-1d71fb85229f
+2022-10-12 10:14:46.495: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"start","id":"867a506f-a7bd-458c-a6ff-1d71fb85229f","payload":{"operationName":"GetAgreements","variables":{"includeUserAgreements":true},"query":"query GetAgreements($includeUserAgreements: Boolean!) {\n  __typename\n  agreement(where: {next_version_id: {_is_null: true}}) {\n    __typename\n    id\n    name_en\n    name_hu\n    changes_en\n    changes_hu\n    content_en\n    content_hu\n    created_at\n    agreement_profiles @include(if: $includeUserAgreements) {\n      __typename\n      id\n      created_at\n    }\n    prev_version {\n      __typename\n      agreement_profiles @include(if: $includeUserAgreements) {\n        __typename\n        id\n        created_at\n      }\n    }\n  }\n}\n\nmutation InsertAcceptAgreements($objects: [agreement_profile_insert_input!]!) {\n  __typename\n  insert_agreement_profile(objects: $objects) {\n    __typename\n    returning {\n      __typename\n      id\n      created_at\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  gender\n  guide_completed\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n}\n\nfragment FullProfile on vw_full_profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n  organisations_created_by_me {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:14:46.495: FINEST: gql.WebSocketLink.645069874: ... send done for 867a506f-a7bd-458c-a6ff-1d71fb85229f
+2022-10-12 10:14:46.549: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"data","id":"867a506f-a7bd-458c-a6ff-1d71fb85229f","payload":{"data":{"__typename":"query_root","agreement":[]}}}
+2022-10-12 10:14:46.551: FINER: gql.links.RetryUntilResponseLink: (GetAgreements#847320954): Got data
+2022-10-12 10:14:46.551: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Got first response
+2022-10-12 10:14:46.552: INFO: gql.links.MultiMutationLink: (GetAgreements/847320954): is done
+2022-10-12 10:14:46.553: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Throttling query response...
+2022-10-12 10:14:46.553: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Releasing response for GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:14:46.557: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetAgreements
+2022-10-12 10:14:46.558: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Cancel request
+2022-10-12 10:14:46.561: FINE: gql.WebSocketLink.645069874: Cancel for GetAgreements#1641091101 (867a506f-a7bd-458c-a6ff-1d71fb85229f) {"includeUserAgreements":true}
+2022-10-12 10:14:46.562: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"stop","id":"867a506f-a7bd-458c-a6ff-1d71fb85229f"}
+2022-10-12 10:14:46.566: INFO: gql.links.LogRequestsLink: Request sent: InsertOrganisation
+2022-10-12 10:14:46.571: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"complete","id":"867a506f-a7bd-458c-a6ff-1d71fb85229f"}
+2022-10-12 10:14:46.575: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Incoming request: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}
+2022-10-12 10:14:46.589: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Mutation saved to box with id 3
+2022-10-12 10:14:46.590: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Register request on listen: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}. Queue length: 0
+2022-10-12 10:14:46.591: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): run a single mutation, no batching
+2022-10-12 10:14:46.592: INFO: gql.WebSocketLink.496145206: Incoming request InsertOrganisation#152747474 (bc592e16-d3e7-4fda-ba1b-f4ad42431d25) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:46.594: FINE: gql.WebSocketLink.496145206: Listening on InsertOrganisation#152747474 (bc592e16-d3e7-4fda-ba1b-f4ad42431d25) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:46.595: FINEST: gql.links.MultiMutationLink: Completing 468562841...
+2022-10-12 10:14:46.604: FINEST: gql.WebSocketLink.496145206: connect(122168): ws(1000072184): Finished successfully
+2022-10-12 10:14:46.607: FINE: gql.WebSocketLink.496145206: Send StartOperation for bc592e16-d3e7-4fda-ba1b-f4ad42431d25
+2022-10-12 10:14:46.610: FINEST: gql.WebSocketLink.496145206: Encoded message: {"type":"start","id":"bc592e16-d3e7-4fda-ba1b-f4ad42431d25","payload":{"operationName":"InsertOrganisation","variables":{"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}},"query":"mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:14:46.613: FINEST: gql.WebSocketLink.496145206: ... send done for bc592e16-d3e7-4fda-ba1b-f4ad42431d25
+2022-10-12 10:14:46.656: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"data","id":"bc592e16-d3e7-4fda-ba1b-f4ad42431d25","payload":{"data":null,"errors":[{"extensions":{"path":"$.selectionSet.insert_organisation_one.args.object","code":"constraint-violation"},"message":"Uniqueness violation. duplicate key value violates unique constraint \"organisation_pkey\""}]}}
+2022-10-12 10:14:46.657: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got data
+2022-10-12 10:14:46.658: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"complete","id":"bc592e16-d3e7-4fda-ba1b-f4ad42431d25"}
+2022-10-12 10:14:46.659: FINE: gql.WebSocketLink.496145206: Done for InsertOrganisation#152747474 (bc592e16-d3e7-4fda-ba1b-f4ad42431d25) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:46.659: FINE: gql.WebSocketLink.496145206: Cancel for InsertOrganisation#152747474 (bc592e16-d3e7-4fda-ba1b-f4ad42431d25) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:46.660: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got done
+2022-10-12 10:14:46.661: FINEST: gql.links.MultiMutationLink: Value sent for 468562841
+2022-10-12 10:14:46.661: FINEST: gql.links.MultiMutationLink: Response stream controller was closed: false
+2022-10-12 10:14:46.661: FINEST: gql.links.MultiMutationLink: Deleting 468562841 (boxId: 3)
+2022-10-12 10:14:46.664: SEVERE: gql.links.LogRequestsLink: Exception occurred while processing GInsertOrganisationReq {
+2022-10-12 10:14:46.664: SEVERE: gql.links.LogRequestsLink:   vars=GInsertOrganisationVars {
+2022-10-12 10:14:46.664: SEVERE: gql.links.LogRequestsLink:     object=Gorganisation_insert_input {
+2022-10-12 10:14:46.664: SEVERE: gql.links.LogRequestsLink:       id=23495e38-a5ad-548c-b9fd-dfc5126d7bcc,
+2022-10-12 10:14:46.664: SEVERE: gql.links.LogRequestsLink:       name=F3BOp962SUNB6VO1gQO5xqMlIaS2,
+2022-10-12 10:14:46.664: SEVERE: gql.links.LogRequestsLink:     },
+2022-10-12 10:14:46.664: SEVERE: gql.links.LogRequestsLink:   },
+2022-10-12 10:14:46.664: SEVERE: gql.links.LogRequestsLink:   operation=Operation(document: DocumentNode("mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"), operationName: InsertOrganisation),
+2022-10-12 10:14:46.664: SEVERE: gql.links.LogRequestsLink:   requestId=auto_id_153783,
+2022-10-12 10:14:46.664: SEVERE: gql.links.LogRequestsLink:   executeOnListen=true,
+2022-10-12 10:14:46.664: SEVERE: gql.links.LogRequestsLink: }: GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:14:46.673: SEVERE: ProfileService: Exception in ensure organisation - GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation}))): GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:14:46.678: INFO: gql.links.LogRequestsLink: Request sent: GetAgreements
+2022-10-12 10:14:46.686: INFO: gql.links.MultiMutationLink: (InsertOrganisation/468562841): is done
+2022-10-12 10:14:46.693: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Incoming request: GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:14:46.699: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetAgreements
+2022-10-12 10:14:46.715: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Waiting for first response...
+2022-10-12 10:14:46.719: INFO: gql.WebSocketLink.645069874: Incoming request GetAgreements#455465910 (94906478-17d5-42db-83c1-063c0d82de77) {"includeUserAgreements":true}
+2022-10-12 10:14:46.721: FINE: gql.WebSocketLink.645069874: Listening on GetAgreements#455465910 (94906478-17d5-42db-83c1-063c0d82de77) {"includeUserAgreements":true}
+2022-10-12 10:14:46.722: FINEST: gql.WebSocketLink.645069874: connect(131688): ws(825073776): Finished successfully
+2022-10-12 10:14:46.722: FINE: gql.WebSocketLink.645069874: Send StartOperation for 94906478-17d5-42db-83c1-063c0d82de77
+2022-10-12 10:14:46.724: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"start","id":"94906478-17d5-42db-83c1-063c0d82de77","payload":{"operationName":"GetAgreements","variables":{"includeUserAgreements":true},"query":"query GetAgreements($includeUserAgreements: Boolean!) {\n  __typename\n  agreement(where: {next_version_id: {_is_null: true}}) {\n    __typename\n    id\n    name_en\n    name_hu\n    changes_en\n    changes_hu\n    content_en\n    content_hu\n    created_at\n    agreement_profiles @include(if: $includeUserAgreements) {\n      __typename\n      id\n      created_at\n    }\n    prev_version {\n      __typename\n      agreement_profiles @include(if: $includeUserAgreements) {\n        __typename\n        id\n        created_at\n      }\n    }\n  }\n}\n\nmutation InsertAcceptAgreements($objects: [agreement_profile_insert_input!]!) {\n  __typename\n  insert_agreement_profile(objects: $objects) {\n    __typename\n    returning {\n      __typename\n      id\n      created_at\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  gender\n  guide_completed\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n}\n\nfragment FullProfile on vw_full_profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n  organisations_created_by_me {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:14:46.725: FINEST: gql.WebSocketLink.645069874: ... send done for 94906478-17d5-42db-83c1-063c0d82de77
+2022-10-12 10:14:46.769: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"data","id":"94906478-17d5-42db-83c1-063c0d82de77","payload":{"data":{"__typename":"query_root","agreement":[]}}}
+2022-10-12 10:14:46.771: FINER: gql.links.RetryUntilResponseLink: (GetAgreements#847320954): Got data
+2022-10-12 10:14:46.771: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Got first response
+2022-10-12 10:14:46.772: INFO: gql.links.MultiMutationLink: (GetAgreements/847320954): is done
+2022-10-12 10:14:46.773: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Throttling query response...
+2022-10-12 10:14:46.777: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Releasing response for GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:14:46.792: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetAgreements
+2022-10-12 10:14:46.796: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Cancel request
+2022-10-12 10:14:46.805: FINE: gql.WebSocketLink.645069874: Cancel for GetAgreements#455465910 (94906478-17d5-42db-83c1-063c0d82de77) {"includeUserAgreements":true}
+2022-10-12 10:14:46.806: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"stop","id":"94906478-17d5-42db-83c1-063c0d82de77"}
+2022-10-12 10:14:46.808: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"complete","id":"94906478-17d5-42db-83c1-063c0d82de77"}
+2022-10-12 10:14:49.505: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:49.505: INFO: gql.WebSocketLink.645069874: Change status to idle
+2022-10-12 10:14:49.645: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:49.873: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:49.874: INFO: gql.WebSocketLink.496145206: Change status to idle
+2022-10-12 10:14:51.250: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"data","id":"2ace77a3-df09-48b8-90de-6b571cf9216a","payload":{"data":{"vw_full_profile" : [{"__typename":"vw_full_profile","id":"F3BOp962SUNB6VO1gQO5xqMlIaS2","name":"","birth_year":null,"gender":null,"language":null,"email":"belakovics.akos@gmail.com","phone":null,"vat_id":null,"city":null,"address":null,"company_name":null,"postal_code":null,"guide_completed":true,"organisations_created_by_me":[]}]}}}
+2022-10-12 10:14:51.250: INFO: gql.WebSocketLink.645069874: Change status to connected
+2022-10-12 10:14:51.251: FINER: gql.links.RetryUntilResponseLink: (GetCurrentUserProfile#2063725984): Got data
+2022-10-12 10:14:51.252: FINEST: gql.links.MultiMutationLink: (GetCurrentUserProfile/2063725984): Throttling query response...
+2022-10-12 10:14:51.253: FINEST: gql.links.MultiMutationLink: (GetCurrentUserProfile/2063725984): Releasing response for GetCurrentUserProfile#2063725984 {id: F3BOp962SUNB6VO1gQO5xqMlIaS2}
+2022-10-12 10:14:51.257: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetCurrentUserProfile
+2022-10-12 10:14:51.262: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetCurrentUserProfile
+2022-10-12 10:14:51.264: INFO: gql.links.LogRequestsLink: Request sent: InsertOrganisation
+2022-10-12 10:14:51.276: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Incoming request: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}
+2022-10-12 10:14:51.281: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Mutation saved to box with id 4
+2022-10-12 10:14:51.281: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Register request on listen: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}. Queue length: 0
+2022-10-12 10:14:51.281: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): run a single mutation, no batching
+2022-10-12 10:14:51.282: INFO: gql.WebSocketLink.496145206: Incoming request InsertOrganisation#1471503526 (50fcd8ee-5bf9-472d-92a2-5a6eaed63af3) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:51.283: FINE: gql.WebSocketLink.496145206: Listening on InsertOrganisation#1471503526 (50fcd8ee-5bf9-472d-92a2-5a6eaed63af3) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:51.283: FINEST: gql.links.MultiMutationLink: Completing 468562841...
+2022-10-12 10:14:51.284: INFO: gql.WebSocketLink.496145206: Change status to connected
+2022-10-12 10:14:51.284: FINEST: gql.WebSocketLink.496145206: connect(140859): ws(641691521): Finished successfully
+2022-10-12 10:14:51.284: FINE: gql.WebSocketLink.496145206: Send StartOperation for 50fcd8ee-5bf9-472d-92a2-5a6eaed63af3
+2022-10-12 10:14:51.285: FINEST: gql.WebSocketLink.496145206: Encoded message: {"type":"start","id":"50fcd8ee-5bf9-472d-92a2-5a6eaed63af3","payload":{"operationName":"InsertOrganisation","variables":{"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}},"query":"mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:14:51.285: FINEST: gql.WebSocketLink.496145206: ... send done for 50fcd8ee-5bf9-472d-92a2-5a6eaed63af3
+2022-10-12 10:14:51.330: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"data","id":"50fcd8ee-5bf9-472d-92a2-5a6eaed63af3","payload":{"data":null,"errors":[{"extensions":{"path":"$.selectionSet.insert_organisation_one.args.object","code":"constraint-violation"},"message":"Uniqueness violation. duplicate key value violates unique constraint \"organisation_pkey\""}]}}
+2022-10-12 10:14:51.332: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got data
+2022-10-12 10:14:51.333: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"complete","id":"50fcd8ee-5bf9-472d-92a2-5a6eaed63af3"}
+2022-10-12 10:14:51.335: FINE: gql.WebSocketLink.496145206: Done for InsertOrganisation#1471503526 (50fcd8ee-5bf9-472d-92a2-5a6eaed63af3) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:51.336: FINE: gql.WebSocketLink.496145206: Cancel for InsertOrganisation#1471503526 (50fcd8ee-5bf9-472d-92a2-5a6eaed63af3) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:51.339: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got done
+2022-10-12 10:14:51.340: FINEST: gql.links.MultiMutationLink: Value sent for 468562841
+2022-10-12 10:14:51.341: FINEST: gql.links.MultiMutationLink: Response stream controller was closed: false
+2022-10-12 10:14:51.342: FINEST: gql.links.MultiMutationLink: Deleting 468562841 (boxId: 4)
+2022-10-12 10:14:51.345: SEVERE: gql.links.LogRequestsLink: Exception occurred while processing GInsertOrganisationReq {
+2022-10-12 10:14:51.345: SEVERE: gql.links.LogRequestsLink:   vars=GInsertOrganisationVars {
+2022-10-12 10:14:51.345: SEVERE: gql.links.LogRequestsLink:     object=Gorganisation_insert_input {
+2022-10-12 10:14:51.345: SEVERE: gql.links.LogRequestsLink:       id=23495e38-a5ad-548c-b9fd-dfc5126d7bcc,
+2022-10-12 10:14:51.345: SEVERE: gql.links.LogRequestsLink:       name=F3BOp962SUNB6VO1gQO5xqMlIaS2,
+2022-10-12 10:14:51.345: SEVERE: gql.links.LogRequestsLink:     },
+2022-10-12 10:14:51.345: SEVERE: gql.links.LogRequestsLink:   },
+2022-10-12 10:14:51.345: SEVERE: gql.links.LogRequestsLink:   operation=Operation(document: DocumentNode("mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"), operationName: InsertOrganisation),
+2022-10-12 10:14:51.345: SEVERE: gql.links.LogRequestsLink:   requestId=auto_id_516358,
+2022-10-12 10:14:51.345: SEVERE: gql.links.LogRequestsLink:   executeOnListen=true,
+2022-10-12 10:14:51.345: SEVERE: gql.links.LogRequestsLink: }: GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:14:51.364: SEVERE: ProfileService: Exception in ensure organisation - GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation}))): GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:14:51.367: INFO: gql.links.LogRequestsLink: Request sent: GetAgreements
+2022-10-12 10:14:51.392: INFO: gql.links.MultiMutationLink: (InsertOrganisation/468562841): is done
+2022-10-12 10:14:51.395: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Incoming request: GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:14:51.399: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetAgreements
+2022-10-12 10:14:51.400: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Waiting for first response...
+2022-10-12 10:14:51.403: INFO: gql.WebSocketLink.645069874: Incoming request GetAgreements#1274754123 (764ab68f-e8cd-4fcd-be2f-6100cf05ddac) {"includeUserAgreements":true}
+2022-10-12 10:14:51.405: FINE: gql.WebSocketLink.645069874: Listening on GetAgreements#1274754123 (764ab68f-e8cd-4fcd-be2f-6100cf05ddac) {"includeUserAgreements":true}
+2022-10-12 10:14:51.406: FINEST: gql.WebSocketLink.645069874: connect(136118): ws(743921440): Finished successfully
+2022-10-12 10:14:51.407: FINE: gql.WebSocketLink.645069874: Send StartOperation for 764ab68f-e8cd-4fcd-be2f-6100cf05ddac
+2022-10-12 10:14:51.409: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"start","id":"764ab68f-e8cd-4fcd-be2f-6100cf05ddac","payload":{"operationName":"GetAgreements","variables":{"includeUserAgreements":true},"query":"query GetAgreements($includeUserAgreements: Boolean!) {\n  __typename\n  agreement(where: {next_version_id: {_is_null: true}}) {\n    __typename\n    id\n    name_en\n    name_hu\n    changes_en\n    changes_hu\n    content_en\n    content_hu\n    created_at\n    agreement_profiles @include(if: $includeUserAgreements) {\n      __typename\n      id\n      created_at\n    }\n    prev_version {\n      __typename\n      agreement_profiles @include(if: $includeUserAgreements) {\n        __typename\n        id\n        created_at\n      }\n    }\n  }\n}\n\nmutation InsertAcceptAgreements($objects: [agreement_profile_insert_input!]!) {\n  __typename\n  insert_agreement_profile(objects: $objects) {\n    __typename\n    returning {\n      __typename\n      id\n      created_at\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  gender\n  guide_completed\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n}\n\nfragment FullProfile on vw_full_profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n  organisations_created_by_me {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:14:51.410: FINEST: gql.WebSocketLink.645069874: ... send done for 764ab68f-e8cd-4fcd-be2f-6100cf05ddac
+2022-10-12 10:14:51.456: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"data","id":"764ab68f-e8cd-4fcd-be2f-6100cf05ddac","payload":{"data":{"__typename":"query_root","agreement":[]}}}
+2022-10-12 10:14:51.458: FINER: gql.links.RetryUntilResponseLink: (GetAgreements#847320954): Got data
+2022-10-12 10:14:51.459: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Got first response
+2022-10-12 10:14:51.459: INFO: gql.links.MultiMutationLink: (GetAgreements/847320954): is done
+2022-10-12 10:14:51.460: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Throttling query response...
+2022-10-12 10:14:51.461: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Releasing response for GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:14:51.464: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetAgreements
+2022-10-12 10:14:51.464: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Cancel request
+2022-10-12 10:14:51.466: FINE: gql.WebSocketLink.645069874: Cancel for GetAgreements#1274754123 (764ab68f-e8cd-4fcd-be2f-6100cf05ddac) {"includeUserAgreements":true}
+2022-10-12 10:14:51.467: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"stop","id":"764ab68f-e8cd-4fcd-be2f-6100cf05ddac"}
+2022-10-12 10:14:51.470: INFO: gql.links.LogRequestsLink: Request sent: InsertOrganisation
+2022-10-12 10:14:51.473: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"complete","id":"764ab68f-e8cd-4fcd-be2f-6100cf05ddac"}
+2022-10-12 10:14:51.481: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Incoming request: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}
+2022-10-12 10:14:51.486: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Mutation saved to box with id 5
+2022-10-12 10:14:51.487: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): Register request on listen: InsertOrganisation#468562841 {object: {id: 23495e38-a5ad-548c-b9fd-dfc5126d7bcc, name: F3BOp962SUNB6VO1gQO5xqMlIaS2}}. Queue length: 0
+2022-10-12 10:14:51.488: FINEST: gql.links.MultiMutationLink: (InsertOrganisation/468562841): run a single mutation, no batching
+2022-10-12 10:14:51.490: INFO: gql.WebSocketLink.496145206: Incoming request InsertOrganisation#680475764 (64740760-7c87-4f3a-bad1-4e36202f36ab) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:51.492: FINE: gql.WebSocketLink.496145206: Listening on InsertOrganisation#680475764 (64740760-7c87-4f3a-bad1-4e36202f36ab) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:51.493: FINEST: gql.links.MultiMutationLink: Completing 468562841...
+2022-10-12 10:14:51.495: FINEST: gql.WebSocketLink.496145206: connect(138743): ws(676290356): Finished successfully
+2022-10-12 10:14:51.495: FINE: gql.WebSocketLink.496145206: Send StartOperation for 64740760-7c87-4f3a-bad1-4e36202f36ab
+2022-10-12 10:14:51.496: FINEST: gql.WebSocketLink.496145206: Encoded message: {"type":"start","id":"64740760-7c87-4f3a-bad1-4e36202f36ab","payload":{"operationName":"InsertOrganisation","variables":{"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}},"query":"mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:14:51.496: FINEST: gql.WebSocketLink.496145206: ... send done for 64740760-7c87-4f3a-bad1-4e36202f36ab
+2022-10-12 10:14:51.544: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"data","id":"64740760-7c87-4f3a-bad1-4e36202f36ab","payload":{"data":null,"errors":[{"extensions":{"path":"$.selectionSet.insert_organisation_one.args.object","code":"constraint-violation"},"message":"Uniqueness violation. duplicate key value violates unique constraint \"organisation_pkey\""}]}}
+2022-10-12 10:14:51.545: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got data
+2022-10-12 10:14:51.547: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"complete","id":"64740760-7c87-4f3a-bad1-4e36202f36ab"}
+2022-10-12 10:14:51.548: FINE: gql.WebSocketLink.496145206: Done for InsertOrganisation#680475764 (64740760-7c87-4f3a-bad1-4e36202f36ab) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:51.548: FINE: gql.WebSocketLink.496145206: Cancel for InsertOrganisation#680475764 (64740760-7c87-4f3a-bad1-4e36202f36ab) {"object":{"id":"23495e38-a5ad-548c-b9fd-dfc5126d7bcc","name":"F3BOp962SUNB6VO1gQO5xqMlIaS2"}}
+2022-10-12 10:14:51.549: FINER: gql.links.RetryUntilResponseLink: (InsertOrganisation#468562841): Got done
+2022-10-12 10:14:51.549: FINEST: gql.links.MultiMutationLink: Value sent for 468562841
+2022-10-12 10:14:51.550: FINEST: gql.links.MultiMutationLink: Response stream controller was closed: false
+2022-10-12 10:14:51.551: FINEST: gql.links.MultiMutationLink: Deleting 468562841 (boxId: 5)
+2022-10-12 10:14:51.553: SEVERE: gql.links.LogRequestsLink: Exception occurred while processing GInsertOrganisationReq {
+2022-10-12 10:14:51.553: SEVERE: gql.links.LogRequestsLink:   vars=GInsertOrganisationVars {
+2022-10-12 10:14:51.553: SEVERE: gql.links.LogRequestsLink:     object=Gorganisation_insert_input {
+2022-10-12 10:14:51.553: SEVERE: gql.links.LogRequestsLink:       id=23495e38-a5ad-548c-b9fd-dfc5126d7bcc,
+2022-10-12 10:14:51.553: SEVERE: gql.links.LogRequestsLink:       name=F3BOp962SUNB6VO1gQO5xqMlIaS2,
+2022-10-12 10:14:51.553: SEVERE: gql.links.LogRequestsLink:     },
+2022-10-12 10:14:51.553: SEVERE: gql.links.LogRequestsLink:   },
+2022-10-12 10:14:51.553: SEVERE: gql.links.LogRequestsLink:   operation=Operation(document: DocumentNode("mutation InsertOrganisation($object: organisation_insert_input!) {\n  __typename\n  insert_organisation_one(object: $object) {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"), operationName: InsertOrganisation),
+2022-10-12 10:14:51.553: SEVERE: gql.links.LogRequestsLink:   requestId=auto_id_159875,
+2022-10-12 10:14:51.553: SEVERE: gql.links.LogRequestsLink:   executeOnListen=true,
+2022-10-12 10:14:51.553: SEVERE: gql.links.LogRequestsLink: }: GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:14:51.563: SEVERE: ProfileService: Exception in ensure organisation - GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation}))): GraphQLRequestException(GraphQLErrorException(GraphQLError(message: Uniqueness violation. duplicate key value violates unique constraint "organisation_pkey", locations: null, path: null, extensions: {path: $.selectionSet.insert_organisation_one.args.object, code: constraint-violation})))
+2022-10-12 10:14:51.572: INFO: gql.links.LogRequestsLink: Request sent: GetAgreements
+2022-10-12 10:14:51.577: INFO: gql.links.MultiMutationLink: (InsertOrganisation/468562841): is done
+2022-10-12 10:14:51.579: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Incoming request: GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:14:51.583: FINE: gql.links.LogRequestsLink: Got DataSource.Cache response for GetAgreements
+2022-10-12 10:14:51.586: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Waiting for first response...
+2022-10-12 10:14:51.589: INFO: gql.WebSocketLink.645069874: Incoming request GetAgreements#603393924 (6140de27-7dce-4877-a47e-87dfaebf5f5e) {"includeUserAgreements":true}
+2022-10-12 10:14:51.590: FINE: gql.WebSocketLink.645069874: Listening on GetAgreements#603393924 (6140de27-7dce-4877-a47e-87dfaebf5f5e) {"includeUserAgreements":true}
+2022-10-12 10:14:51.591: FINEST: gql.WebSocketLink.645069874: connect(100743): ws(658403937): Finished successfully
+2022-10-12 10:14:51.592: FINE: gql.WebSocketLink.645069874: Send StartOperation for 6140de27-7dce-4877-a47e-87dfaebf5f5e
+2022-10-12 10:14:51.594: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"start","id":"6140de27-7dce-4877-a47e-87dfaebf5f5e","payload":{"operationName":"GetAgreements","variables":{"includeUserAgreements":true},"query":"query GetAgreements($includeUserAgreements: Boolean!) {\n  __typename\n  agreement(where: {next_version_id: {_is_null: true}}) {\n    __typename\n    id\n    name_en\n    name_hu\n    changes_en\n    changes_hu\n    content_en\n    content_hu\n    created_at\n    agreement_profiles @include(if: $includeUserAgreements) {\n      __typename\n      id\n      created_at\n    }\n    prev_version {\n      __typename\n      agreement_profiles @include(if: $includeUserAgreements) {\n        __typename\n        id\n        created_at\n      }\n    }\n  }\n}\n\nmutation InsertAcceptAgreements($objects: [agreement_profile_insert_input!]!) {\n  __typename\n  insert_agreement_profile(objects: $objects) {\n    __typename\n    returning {\n      __typename\n      id\n      created_at\n    }\n  }\n}\n\nfragment Profile on profile {\n  __typename\n  id\n  name\n  birth_year\n}\n\nfragment ProfileExt on profile {\n  __typename\n  ...Profile\n  gender\n  guide_completed\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n}\n\nfragment FullProfile on vw_full_profile {\n  __typename\n  id\n  name\n  birth_year\n  gender\n  language\n  email\n  phone\n  vat_id\n  city\n  address\n  company_name\n  postal_code\n  guide_completed\n  organisations_created_by_me {\n    __typename\n    ...Organisation\n  }\n}\n\nfragment Organisation on organisation {\n  __typename\n  id\n  name\n  url\n}\n\nfragment OrganisationExt on organisation {\n  __typename\n  ...Organisation\n  payment_url\n  email\n  created_at\n}"}}
+2022-10-12 10:14:51.595: FINEST: gql.WebSocketLink.645069874: ... send done for 6140de27-7dce-4877-a47e-87dfaebf5f5e
+2022-10-12 10:14:51.643: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"data","id":"6140de27-7dce-4877-a47e-87dfaebf5f5e","payload":{"data":{"__typename":"query_root","agreement":[]}}}
+2022-10-12 10:14:51.645: FINER: gql.links.RetryUntilResponseLink: (GetAgreements#847320954): Got data
+2022-10-12 10:14:51.646: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Got first response
+2022-10-12 10:14:51.646: INFO: gql.links.MultiMutationLink: (GetAgreements/847320954): is done
+2022-10-12 10:14:51.646: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Throttling query response...
+2022-10-12 10:14:51.647: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Releasing response for GetAgreements#847320954 {includeUserAgreements: true}
+2022-10-12 10:14:51.650: FINE: gql.links.LogRequestsLink: Got DataSource.Link response for GetAgreements
+2022-10-12 10:14:51.652: FINEST: gql.links.MultiMutationLink: (GetAgreements/847320954): Cancel request
+2022-10-12 10:14:51.657: FINE: gql.WebSocketLink.645069874: Cancel for GetAgreements#603393924 (6140de27-7dce-4877-a47e-87dfaebf5f5e) {"includeUserAgreements":true}
+2022-10-12 10:14:51.657: FINEST: gql.WebSocketLink.645069874: Encoded message: {"type":"stop","id":"6140de27-7dce-4877-a47e-87dfaebf5f5e"}
+2022-10-12 10:14:51.660: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"complete","id":"6140de27-7dce-4877-a47e-87dfaebf5f5e"}
+2022-10-12 10:14:54.504: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:54.505: INFO: gql.WebSocketLink.645069874: Change status to idle
+2022-10-12 10:14:54.646: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:54.874: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:14:54.876: INFO: gql.WebSocketLink.496145206: Change status to idle
+2022-10-12 10:14:59.505: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:14:59.645: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:14:59.875: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:04.510: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:04.647: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:04.877: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:09.712: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:09.754: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:09.878: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:14.510: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:14.648: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:14.878: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:19.509: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:19.649: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:19.878: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:24.510: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:24.649: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:24.879: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:29.509: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:29.649: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:29.880: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:34.513: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:34.736: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:34.882: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:39.512: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:39.735: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:39.881: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:44.512: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:44.736: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:44.883: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:49.514: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:49.736: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:49.885: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:54.514: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:54.737: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:54.885: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:15:59.517: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:15:59.738: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:15:59.886: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:04.516: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:04.741: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:04.886: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:09.514: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:09.741: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:09.888: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:14.516: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:14.740: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:14.888: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:19.518: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:19.741: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:19.888: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:24.518: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:24.742: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:24.890: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:29.518: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:29.743: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:29.891: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:34.519: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:34.745: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:34.890: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:39.524: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:39.744: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:39.892: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:44.521: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:44.745: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:44.893: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:49.522: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:49.746: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:49.893: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:54.522: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:54.747: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:54.894: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:16:59.523: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:16:59.748: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:16:59.894: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:04.524: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:04.747: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:04.894: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:09.524: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:09.748: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:09.896: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:14.525: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:14.749: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:14.895: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:19.526: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:19.752: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:19.897: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:24.526: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:24.752: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:24.898: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:29.528: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:29.753: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:29.898: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:34.529: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:34.754: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:34.899: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:39.593: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:39.754: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:39.899: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:44.594: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:44.756: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:44.900: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:49.594: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:49.755: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:49.997: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:54.595: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:54.756: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:54.999: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:17:59.595: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:17:59.760: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:17:59.999: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:04.596: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:04.757: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:18:04.999: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:09.600: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:09.759: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:18:10.000: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:14.600: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:14.759: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:18:15.008: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:16.039: FINEST: gql.links.MultiMutationLink: (GetTrails/66197781): Cancel request
+2022-10-12 10:18:16.048: FINE: gql.WebSocketLink.898851966: Cancel for GetTrails#1526248129 (8e73c4c5-91db-4d28-8193-a402f4de76fb) {"orderBy":"asc","userId":"F3BOp962SUNB6VO1gQO5xqMlIaS2","onlyNotDeleted":true}
+2022-10-12 10:18:16.050: FINEST: gql.WebSocketLink.898851966: Encoded message: {"type":"stop","id":"8e73c4c5-91db-4d28-8193-a402f4de76fb"}
+2022-10-12 10:18:19.600: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:19.760: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:18:20.004: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:24.602: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:24.759: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:18:25.005: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:29.601: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:29.761: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:18:30.003: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:34.601: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:34.761: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:18:35.004: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:39.603: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:39.761: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:18:40.005: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:44.604: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:44.762: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:18:45.006: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:49.604: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:49.764: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:18:50.007: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:54.606: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:54.764: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:18:55.007: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:18:59.606: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:18:59.765: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:00.008: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:04.607: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:04.765: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:05.009: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:09.609: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:09.766: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:10.009: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:14.609: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:14.766: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:15.012: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:19.608: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:19.767: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:20.010: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:24.612: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:24.768: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:25.011: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:29.611: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:29.770: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:30.012: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:34.612: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:34.769: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:35.014: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:39.612: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:39.772: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:40.014: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:44.699: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:44.771: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:45.014: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:49.701: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:49.771: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:50.015: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:54.701: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:54.776: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:19:55.101: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:19:59.702: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:19:59.773: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:00.101: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:20:04.703: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:20:04.774: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:05.101: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:20:11.224: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:20:11.235: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:11.582: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:20:14.704: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:20:14.773: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:15.104: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:20:19.705: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:20:19.775: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:20.105: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:20:24.706: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:20:24.775: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:25.105: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:20:29.707: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:20:29.776: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:30.106: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:20:34.707: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:20:34.776: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:35.108: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:20:39.709: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:20:39.778: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:40.108: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:20:44.709: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:20:44.776: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:45.109: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:20:49.711: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:20:49.782: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:50.110: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
+2022-10-12 10:20:54.713: FINEST: gql.WebSocketLink.645069874: Message to decode: {"type":"ka"}
+2022-10-12 10:20:54.779: FINEST: gql.WebSocketLink.898851966: Message to decode: {"type":"ka"}
+2022-10-12 10:20:55.111: FINEST: gql.WebSocketLink.496145206: Message to decode: {"type":"ka"}
